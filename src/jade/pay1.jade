@@ -1,0 +1,41 @@
+meta(charset="utf-8")
+block title
+	title Payment
+block viewport
+	meta(name="viewport" content="width=device-width")
+meta(name="format-detection" content="telephone=no")
+link(rel="stylesheet" media="all" href="css/screen.css")
+<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+
+.out
+	.pay
+		.pay__header
+			.col.col1
+				button(type="button" class="button button_blue") << Cancel and return back
+			.col.col2
+				.pay__time
+					i.icon-clock 
+					span 09:34
+		.pay__logo
+			img(src="img/pay-logo.png")
+		table.pay__table
+			tr
+				td.
+					Iphone 7S
+				td.
+					10.00  EUR
+			tr
+				td.
+					Usual unexisting device
+			tr
+				td.
+					Amount due
+				td.
+					0.0345678 BTC
+		.pay__buttons
+			button(type="button btn_green") pay with external wallet
+			button(type="button btn_gray") pay with Cubits wallet
+
+
+
+
