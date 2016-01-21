@@ -1,9 +1,387 @@
-extends _layout
+extends _layout-index.jade
 
 block title
-	title Title of template
+  title Home Page
+
+block viewport
+  meta(name="viewport" content="width=device-width, initial-scale=1")
+
+block header
+  //BEGIN toparea
+  .toparea
+    .toparea__bg
+
+    include _header-transparent
+
+    .l-center
+      .toparea__content
+        h1.bold-title
+          | Europe’s gateway <br> to Bitcoin
+
+        ul.list-circle
+          li As easy to use as online­-banking
+          li Protected by our high security standards
+          li Buy and Sell your Bitcoin anytime
+
+        form.form.form_white-bounds
+          h3.form__title
+            | <b>Signup</b> for a <b>wallet</b>
+
+          .field
+            input.input.input_shadow(type="text", placeholder="First name")
+          .field
+            input.input.input_shadow(type="text", placeholder="Last name")
+          p.form__text
+            | Please enter your real name to perform financial operations
+
+          .field
+            input.input.input_shadow(type="email", placeholder="Email")
+          .field
+            input.input.input_shadow(type="password", placeholder="Desired password")
+          label.checkbox.checkbox_dark
+            input(type="checkbox")
+            span I have read and agree to Terms and Privacy policy
+
+          button.btn(type="submit")
+            | Create account
+  //END toparea
 
 block content
-	.out
-		+icon("octa")
-		| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, ipsum maxime, tempora deserunt minima suscipit voluptatem possimus ratione inventore eveniet autem esse accusamus eos quibusdam consequuntur quia officiis eum! Et!
+  //BEGIN approach
+  section.section
+    .l-center
+      h2.title
+        | <b>The Cubits approach:</b> <br> we make bitcoin simple
+
+      .l-columns.three
+        .l-column.step
+          .step__icon
+            img(src="img/svg/sign-up.svg", alt="")
+          strong.step__title
+            | 1. Sign-up
+          p.step__text
+            | Use the form above to <a href="#">sign up</a> for your own Cubits wallet. Easy.
+
+        .l-column.step
+          .step__icon
+            img(src="img/svg/verification.svg", alt="")
+          strong.step__title
+            | 2. Verification
+          p.step__text
+            | You’re just an SMS away from verifying your account.
+
+        .l-column.step
+          .step__icon
+            img(src="img/svg/exchange.svg", alt="")
+          strong.step__title
+            | 3. Buy bitcoin
+          p.step__text
+            | Instantly buy Bitcoin using your bank account - it couldn’t be simpler.
+
+      hr.divider.divider_mrg80.hide-on-mobile
+
+      .usage-map
+        h2.title
+          | <b>Cubits usage </b> <br> worldwide
+
+        img(src="img/cubits-map.png", alt="")
+
+        p.small-text
+          | Buy Bitcoin from all over the world  <br> (except from U.S.A.)
+
+      .currencies
+        h2.title
+          | <b>buy and sell Bitcoin</b> <br> across multiple currencies
+
+        .currencies__left
+          table.small-table
+            caption Supported currencies
+            tr
+              td EUR
+              td SEK
+              td HUF
+              td USD
+              td JPY
+            tr
+              td GBP 
+              td NOK
+              td HRK
+              td CAD
+              td
+            tr
+              td CHF
+              td CZK
+              td RSD
+              td TRY
+              td
+            tr
+              td DKK
+              td PLN
+              td AUD
+              td RUB
+              td
+
+          p.small-text
+            | Deposits from other currencies can  <br> be converted automatically
+
+        .currencies__right
+          table.small-table.small-table_mod
+            caption Payment methods
+            tr
+              td: i.icon.icon-sofort
+              td: i.icon.icon-skrill
+              td: i.icon.icon-okpay
+
+          table.small-table.small-table_mod
+            caption Transfer methods
+            tr
+              td: i.icon.icon-swift
+              td: i.icon.icon-sepa
+              td
+
+      .clearfix
+  //END approach
+
+  //BEGIN interface
+  section.skew-box.skew-box_shadow.skew-box_interface
+    .skew-box__inner
+      .l-center
+        h2.title.title_white.title_mrg0
+          b The simplest interface
+          br
+          span We make Bitcoin as easy as sending an email
+
+        a.btn.btn_center.btn_w220(href="#")
+          | Buy bitcoin now
+
+        ul.interface.hide-on-mobile
+          li.interface__item
+            p.interface__text 1. <br> Select amount <br> and currency
+            .interface__pic.interface-1
+
+          li.interface__item
+            p.interface__text 2.  <br> Choose one of our trusted <br> payment providers
+            .interface__pic.interface-2
+
+          li.interface__item
+            p.interface__text 3. <br> Recieve the Bitcoins  <br> in your account
+            .interface__pic.interface-3
+
+        .interface-slider.hide-on-desktop
+          .interface-slider__phone
+            .interface-slider__screenshots
+              div.slide.screen-1
+              div.slide.screen-2
+              div.slide.screen-3
+          .interface-slider__right
+            .interface-slider__text
+              div.slide 1. <br> Select amount <br> and currency
+              div.slide 2.  <br> Choose one of our trusted <br> payment providers
+              div.slide 3. <br> Recieve the Bitcoins  <br> in your account
+            .interface-slider__nav
+              button.interface-slider__prev.icon.icon-prev(type="button")
+              button.interface-slider__next.icon.icon-next(type="button")
+  //END interface
+
+
+  //BEGIN facts
+  section.l-center-narrow
+    h2.title
+      b 5 facts you should know
+      br
+      | about Cubits
+
+    ul.custom-list
+      li.custom-list__item
+        span.custom-list__marker 1
+        p.custom-list__text.
+          Cubits is a Bitcoin service based in the U.K. utilising
+          the power and efficiency of <strong>German engineering</strong>.
+      li.custom-list__item
+        span.custom-list__marker 2
+        p.custom-list__text.
+          It is as easy as traditional online banking
+          and the fastest way to access your money.
+      li.custom-list__item
+        span.custom-list__marker 3
+        p.custom-list__text.
+          Transfer cash from your bank account into Bitcoin and back anytime.
+      li.custom-list__item
+        span.custom-list__marker 4
+        p.custom-list__text.
+          Bitcoin has users all over the world.
+          Cubits is a fast and easy way to enable global payments.
+      li.custom-list__item
+        span.custom-list__marker 5
+        p.custom-list__text.
+          Bitcoin is as fast as email and will enable instant financial
+          communication between you and anyone, anywhere in the world.
+      li.custom-list__item
+        span.custom-list__marker 6
+        p.custom-list__text.
+          Cubits provides maximum security for your stored Bitcoin.
+          Read more about our security standards <a href="#">here</a>.
+  //END facts
+
+  //BEGIN stats
+  section.skew-box.skew-box_stats
+    .skew-box__inner
+      .l-center
+        h2.title.title_white
+          b We are europe’s #1 Bitcoin service
+          br
+          span Cubits in numbers
+
+        ul.numbers-list
+          li.numbers-list__item
+            .number
+              span.number__row New wallet <br> accounts
+              strong.number__row.number__value + 1000
+              span.number__row per week
+          li.numbers-list__item
+            .number
+              span.number__row Transaction <br> volume
+              strong.number__row.number__value + 200.000 EUR
+              span.number__row per month
+          li.numbers-list__item
+            .number
+              span.number__row Number of <br> transaction increases
+              strong.number__row.number__value + 100%
+              span.number__row per month
+  //END stats
+
+  //BEGIN testimonials
+  section.l-center
+    h2.title
+      b Real people are using bitcoin
+      br
+      span So can you
+
+    .testimonials.js-testimonials
+      .testimonial
+        .testimonial__pic
+          img(src="img/testimonial1.jpg", alt="")
+        blockquote.testimonial__text
+          p.
+            Bitcoin is real. We host people from all over the world.
+            In our cafe they pay with bitcoin and it all works.
+          cite.cite
+            strong.cite__name Martina
+            span.cite__location Berlin
+            span.cite__about Running a café that  <br> accepts Bitcoins
+
+      .testimonial
+        .testimonial__pic
+          img(src="img/testimonial2.jpg", alt="")
+        blockquote.testimonial__text
+          p.
+            We run an international online business and Bitcoin
+            free us from currency converting and all the hassles.
+          cite.cite
+            strong.cite__name Raoul and Simone
+            span.cite__location London
+            span.cite__about Founders and Member <br> of Bitcoin Community
+
+      .testimonial
+        .testimonial__pic
+          img(src="img/testimonial3.jpg", alt="")
+        blockquote.testimonial__text
+          p.
+            I invested in Bitcoins 12 months ago. And made a profit of 7%?
+            Do you know any bank that can match that?
+          cite.cite
+            strong.cite__name Jean-Paul
+            span.cite__location Paris
+            span.cite__about Trading Art between  <br> France and China
+
+    .l-center-narrow.hide-on-mobile
+      hr.divider.divider_mrg60
+
+      h2.title
+        b Good news
+        br
+        span Cubits in the press
+
+      .press-slider
+        .press-slider__nav
+          button.press-slider__btn(type="button")
+            img(src="img/press/wired.png", alt="Wires")
+          button.press-slider__btn(type="button")
+            img(src="img/press/techcrunch.png", alt="TechCrunch")
+          button.press-slider__btn(type="button")
+            img(src="img/press/theverge.png", alt="TheVerge")
+          button.press-slider__btn(type="button")
+            img(src="img/press/ct.png", alt="CT")
+          .press-slider__arrow.icon.icon-slider-arr
+        .press-slider__slides
+          .press-slider__slide
+            p.
+              »Cubits, headquartered in Berlin, has become one of the most prominent businesses,
+              allowing people to buy and store bitcoins and developing deals with merchants
+              to help them carry out bitcoin transactions.«
+          .press-slider__slide
+            p.
+              »Cubits, headquartered in Berlin, has become one of the most prominent businesses,
+              allowing people to buy and store bitcoins and developing deals with merchants
+              to help them carry out bitcoin transactions.«
+          .press-slider__slide
+            p.
+              »Cubits, headquartered in Berlin, has become one of the most prominent businesses,
+              allowing people to buy and store bitcoins and developing deals with merchants
+              to help them carry out bitcoin transactions.«
+          .press-slider__slide
+            p.
+              »Cubits, headquartered in Berlin, has become one of the most prominent businesses,
+              allowing people to buy and store bitcoins and developing deals with merchants
+              to help them carry out bitcoin transactions.«
+  //END testimonials
+
+  //BEGIN security
+  section.skew-box.skew-box_two-colors
+    .skew-box__inner
+      .l-center
+        .security
+          .security__column
+            .security__figure
+              img(src="img/gif/cubits_security_cold_storage_01.gif", alt="")
+            strong.title
+              b Cold storage
+            p 100% of user funds are safely stored offline
+
+          .security__column
+            .security__figure
+              img(src="img/gif/cubits_animation_security_02.gif", alt="")
+            strong.title
+              b Multi signature
+            p The physical presence of two people is required to access funds
+  //END security
+
+  //BEGIN ask
+  section.l-center-narrow
+    hr.divider.divider_mrg30.hide-on-desktop
+    h2.title
+      | <b>Ask Andreas</b> <br> if you have questions on security
+
+    .expert
+      .expert__pic
+        img(src="img/security-expert.jpg", alt="")
+      .expert__info
+        p.expert__name
+          | Andreas Lehrbaum
+          br
+          | CTO
+        a.expert__contact(href="mailto:security@cubits.com")
+          | security@cubits.com
+
+    hr.divider.divider_mrg30.hide-on-desktop
+  //END ask
+
+  //BEGIN promo
+  section.promo.l-center-narrow
+    hr.divider.divider_mrg60.hide-on-mobile
+    h2.title
+      b Give Cubits a risk-free try.
+
+    a.btn.btn_large.btn_yellow(href="#")
+      | Create your free account
+  //END promo

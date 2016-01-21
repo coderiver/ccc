@@ -1,0 +1,198 @@
+.steps
+  width: 640px
+  margin: 20px auto
+  height: 82px
+  position: relative
+  .steps__line
+    height: 4px
+    background: #94c4d1
+    width: 100%
+    position: absolute
+    left: 0
+    top: 24px
+  .steps__step
+    width: 52px
+    height: 52px
+    position: absolute
+    top: 0
+    left: 0
+    background: #94c4d1
+    border-radius: 52px
+    color: white
+    text-align: center
+    line-height: 52px
+    z-index: 10
+    font-size: 20px
+    &.steps__4
+      right: 0 
+      left: auto
+    &.steps__2
+      left: 33%
+      margin-left: -26px
+    &.steps__3
+      left: 66%
+      margin-left: -26px
+  .steps__title
+    top: 70px
+    width: 152px
+    margin-left: -50px
+    text-align: center
+    color: #353556
+    line-height: 1
+    font-size: 15px
+    +f(r)
+    font-weight: normal
+    position: absolute
+    left: 0
+  .steps__fill
+    background: #1fbeba
+    height: 4px
+    width: 0
+  &.steps_1 .steps__1
+    background: #1fbeba
+    box-shadow: inset 0 0 0 6px #94c4d1
+  &.steps_2
+    .steps__1, .steps__2
+      background: #1fbeba
+      box-shadow: inset 0 0 0 6px #94c4d1
+    .steps__1:before
+      position: absolute
+      height: 4px
+      width: 10px
+      background: #1fbeba
+      top: 24px
+      content: " "
+      z-index: 20
+      right: 0
+    .steps__2:before
+      position: absolute
+      height: 4px
+      width: 10px
+      background: #1fbeba
+      top: 24px
+      content: " "
+      z-index: 20
+      left: 0
+    .steps__fill
+      width: 33%
+  &.steps_3
+    .steps__1, .steps__2, .steps__3
+      background: #1fbeba
+      box-shadow: inset 0 0 0 6px #94c4d1
+    .steps__1:before
+      position: absolute
+      height: 4px
+      width: 10px
+      background: #1fbeba
+      top: 24px
+      content: " "
+      z-index: 20
+      right: 0
+    .steps__2
+      &:before
+        position: absolute
+        height: 4px
+        width: 10px
+        background: #1fbeba
+        top: 24px
+        content: " "
+        z-index: 20
+        left: 0
+      &:after
+        position: absolute
+        height: 4px
+        width: 10px
+        background: #1fbeba
+        top: 24px
+        content: " "
+        z-index: 20
+        right: 0
+    .steps__3:before
+      position: absolute
+      height: 4px
+      width: 10px
+      background: #1fbeba
+      top: 24px
+      content: " "
+      z-index: 20
+      left: 0
+    .steps__fill
+      width: 66%
+  &.steps_4
+    .steps__step
+      background: #1fbeba
+      box-shadow: inset 0 0 0 6px #94c4d1
+    .steps__2:before, .steps__3:before, .steps__4:before
+      position: absolute
+      height: 4px
+      width: 10px
+      background: #1fbeba
+      top: 24px
+      content: " "
+      z-index: 20
+      left: 0
+    .steps__1:before, .steps__2:after
+      position: absolute
+      height: 4px
+      width: 10px
+      background: #1fbeba
+      top: 24px
+      content: " "
+      z-index: 20
+      right: 0
+    .steps__3
+      &:after
+        position: absolute
+        height: 4px
+        width: 10px
+        background: #1fbeba
+        top: 24px
+        content: " "
+        z-index: 20
+        right: 0
+      &:before
+        position: absolute
+        height: 4px
+        width: 10px
+        background: #1fbeba
+        top: 24px
+        content: " "
+        z-index: 20
+        left: 0
+    .steps__fill
+      width: 66%
+  &.steps_spaced
+    margin-bottom: 50px
+    margin-top: 50px
+  &.steps_three
+    width: 444px
+    .steps__step
+      &.steps__1
+        left: 0
+        right: auto
+      &.steps__2
+        left: 50%
+        margin-left: -26px
+      &.steps__3
+        right: 0
+        left: auto
+    &.steps_2 .steps__fill
+      width: 50%
+    &.steps_3 .steps__fill
+      width: 100%
+  .icon-invoice, .icon-deposit, .icon-cubewhite, .icon-buy
+    position: absolute
+    top: 11px
+    left: 11px
+    display: block
+    width: 30px
+    height: 30px  
+    background-size: contain
+  .icon-invoice
+    background: url("../img/icon-invoice.png")   
+  .icon-deposit
+    background: url("../img/icon-deposit.png")   
+  .icon-cubewhite
+    background: url("../img/icon-cubits.png")   
+  .icon-buy
+    background: url("../img/icon-buy.png")   

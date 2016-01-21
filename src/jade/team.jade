@@ -1,0 +1,391 @@
+extends _layout
+
+block title
+  title Our Team
+
+block header
+  //BEGIN header
+  header.header-wrap.header-wrap_team
+    .header
+      include _header-inner
+  //END header
+
+block content
+  include _nav-inner
+
+  h1.title.title_large
+    | Our team
+
+  //BEGIN board
+  .l-columns-team.js-tabs
+    .l-column
+      .tab-content.is-active
+        .member
+          .member__pic
+            img(src="img/team/tim.jpg", alt="")
+          .member__info
+            dl.member__name
+              dt Tim Rehder
+              dd CEO and co-founder
+            p.text.
+              Sed molestie augue sit amet leo consequat posuere.
+              Vestibulum ante ipsum primis in faucibus orci luctus et
+              ultrices posuere cubilia Curae; Proin vel ante a orci
+              tempus eleifend ut et magna.
+
+        .member
+          .member__pic
+            img(src="img/team/julian.jpg", alt="")
+          .member__info
+            dl.member__name
+              dt Julian Mautner
+              dd Co-founder
+            p.text.
+              Sed molestie augue sit amet leo consequat posuere.
+              Vestibulum ante ipsum primis in faucibus orci luctus et
+              ultrices posuere cubilia Curae; Proin vel ante a orci
+              tempus eleifend ut et magna.
+
+        .member
+          .member__pic
+            img(src="img/team/oskar.jpg", alt="")
+          .member__info
+            dl.member__name
+              dt Oskar Paolini
+              dd Head of Risk Management
+            p.text.
+              Sed molestie augue sit amet leo consequat posuere.
+              Vestibulum ante ipsum primis in faucibus orci luctus et
+              ultrices posuere cubilia Curae; Proin vel ante a orci
+              tempus eleifend ut et magna.
+        .btn-wrapper
+          a.btn.btn_large.btn_darkblue(href="#")
+            | View our team members
+      .tab-content
+        ul.board
+          li.board__tile
+            .member.member_tile.js-tooltip
+              .member__pic
+                img(src="img/team/tim.jpg", alt="")
+              .member__about
+                strong.member__name
+                  | Tim Rehder
+                span.member__post
+                  | CEO
+                p.text.
+                  After completing Bachelor degree in Physics and Master degree in Management
+                  in Kiev universities Max became a co-founder in Kiev based Software Development studio.
+                  Late 2013 Max got interested in Bitcoin, before joining us he founded Bitcoin
+                  Foundation Ukraine and Satoshi Square Kiev and even obtained a management
+                  position in UK based Bitcoin Startup. Outside of professional life you
+                  can find Max riding any kind of a board.
+          li.board__tile
+            .member.member_tile.js-tooltip
+              .member__pic
+                img(src="img/team/oskar.jpg", alt="")
+              .member__about
+                strong.member__name
+                  | Oskar
+                span.member__post
+                  | Product manager
+                p.text.
+                  After completing Bachelor degree in Physics and Master degree in Management
+                  in Kiev universities Max became a co-founder in Kiev based Software Development studio.
+                  Late 2013 Max got interested in Bitcoin, before joining us he founded Bitcoin
+                  Foundation Ukraine and Satoshi Square Kiev and even obtained a management
+                  position in UK based Bitcoin Startup. Outside of professional life you
+                  can find Max riding any kind of a board.
+
+          li.board__tile
+            .member.member_tile.js-tooltip
+              .member__pic
+                img(src="img/team/julian.jpg", alt="")
+              .member__about
+                strong.member__name
+                  | Julian
+                span.member__post
+                  | Product manager
+                p.text.
+                  After completing Bachelor degree in Physics and Master degree in Management
+                  in Kiev universities Max became a co-founder in Kiev based Software Development studio.
+                  Late 2013 Max got interested in Bitcoin, before joining us he founded Bitcoin
+                  Foundation Ukraine and Satoshi Square Kiev and even obtained a management
+                  position in UK based Bitcoin Startup. Outside of professional life you
+                  can find Max riding any kind of a board.
+
+          li.board__tile
+            .member.member_tile.js-tooltip
+              .member__pic
+                img(src="img/team/dirk.jpg", alt="")
+              .member__about
+                strong.member__name
+                  | Dirk
+                span.member__post
+                  | Product manager
+                p.text.
+                  After completing Bachelor degree in Physics and Master degree in Management
+                  in Kiev universities Max became a co-founder in Kiev based Software Development studio.
+                  Late 2013 Max got interested in Bitcoin, before joining us he founded Bitcoin
+                  Foundation Ukraine and Satoshi Square Kiev and even obtained a management
+                  position in UK based Bitcoin Startup. Outside of professional life you
+                  can find Max riding any kind of a board.
+
+          li.board__tile
+            .member.member_tile.js-tooltip
+              .member__pic
+                img(src="img/team/vasilije.jpg", alt="")
+              .member__about
+                strong.member__name
+                  | Vasilije
+                span.member__post
+                  | Product manager
+                p.text.
+                  After completing Bachelor degree in Physics and Master degree in Management
+                  in Kiev universities Max became a co-founder in Kiev based Software Development studio.
+                  Late 2013 Max got interested in Bitcoin, before joining us he founded Bitcoin
+                  Foundation Ukraine and Satoshi Square Kiev and even obtained a management
+                  position in UK based Bitcoin Startup. Outside of professional life you
+                  can find Max riding any kind of a board.
+
+          li.board__tile
+            .member.member_tile.js-tooltip
+              .member__pic
+                img(src="img/team/sergey.jpg", alt="")
+              .member__about
+                strong.member__name
+                  | Sergey
+                span.member__post
+                  | Product manager
+                p.text.
+                  After completing Bachelor degree in Physics and Master degree in Management
+                  in Kiev universities Max became a co-founder in Kiev based Software Development studio.
+                  Late 2013 Max got interested in Bitcoin, before joining us he founded Bitcoin
+                  Foundation Ukraine and Satoshi Square Kiev and even obtained a management
+                  position in UK based Bitcoin Startup. Outside of professional life you
+                  can find Max riding any kind of a board.
+
+          li.board__tile
+            .member.member_tile.js-tooltip
+              .member__pic
+                img(src="img/team/omar.jpg", alt="")
+              .member__about
+                strong.member__name
+                  | Omar
+                span.member__post
+                  | Product manager
+                p.text.
+                  After completing Bachelor degree in Physics and Master degree in Management
+                  in Kiev universities Max became a co-founder in Kiev based Software Development studio.
+                  Late 2013 Max got interested in Bitcoin, before joining us he founded Bitcoin
+                  Foundation Ukraine and Satoshi Square Kiev and even obtained a management
+                  position in UK based Bitcoin Startup. Outside of professional life you
+                  can find Max riding any kind of a board.
+
+          li.board__tile
+            .member.member_tile.js-tooltip
+              .member__pic
+                img(src="img/team/nick.jpg", alt="")
+              .member__about
+                strong.member__name
+                  | Nick
+                span.member__post
+                  | Product manager
+                p.text.
+                  After completing Bachelor degree in Physics and Master degree in Management
+                  in Kiev universities Max became a co-founder in Kiev based Software Development studio.
+                  Late 2013 Max got interested in Bitcoin, before joining us he founded Bitcoin
+                  Foundation Ukraine and Satoshi Square Kiev and even obtained a management
+                  position in UK based Bitcoin Startup. Outside of professional life you
+                  can find Max riding any kind of a board.
+
+          li.board__tile
+            .member.member_tile.js-tooltip
+              .member__pic
+                img(src="img/team/tim.jpg", alt="")
+              .member__about
+                strong.member__name
+                  | Tim Rehder
+                span.member__post
+                  | Product manager
+                p.text.
+                  After completing Bachelor degree in Physics and Master degree in Management
+                  in Kiev universities Max became a co-founder in Kiev based Software Development studio.
+                  Late 2013 Max got interested in Bitcoin, before joining us he founded Bitcoin
+                  Foundation Ukraine and Satoshi Square Kiev and even obtained a management
+                  position in UK based Bitcoin Startup. Outside of professional life you
+                  can find Max riding any kind of a board.
+
+          li.board__tile
+            .member.member_tile.js-tooltip
+              .member__pic
+                img(src="img/team/oskar.jpg", alt="")
+              .member__about
+                strong.member__name
+                  | Oskar
+                span.member__post
+                  | Product manager
+                p.text.
+                  After completing Bachelor degree in Physics and Master degree in Management
+                  in Kiev universities Max became a co-founder in Kiev based Software Development studio.
+                  Late 2013 Max got interested in Bitcoin, before joining us he founded Bitcoin
+                  Foundation Ukraine and Satoshi Square Kiev and even obtained a management
+                  position in UK based Bitcoin Startup. Outside of professional life you
+                  can find Max riding any kind of a board.
+
+          li.board__tile
+            .member.member_tile.js-tooltip
+              .member__pic
+                img(src="img/team/julian.jpg", alt="")
+              .member__about
+                strong.member__name
+                  | Julian
+                span.member__post
+                  | Product manager
+                p.text.
+                  After completing Bachelor degree in Physics and Master degree in Management
+                  in Kiev universities Max became a co-founder in Kiev based Software Development studio.
+                  Late 2013 Max got interested in Bitcoin, before joining us he founded Bitcoin
+                  Foundation Ukraine and Satoshi Square Kiev and even obtained a management
+                  position in UK based Bitcoin Startup. Outside of professional life you
+                  can find Max riding any kind of a board.
+
+          li.board__tile
+            .member.member_tile.js-tooltip
+              .member__pic
+                img(src="img/team/dirk.jpg", alt="")
+              .member__about
+                strong.member__name
+                  | Dirk
+                span.member__post
+                  | Product manager
+                p.text.
+                  After completing Bachelor degree in Physics and Master degree in Management
+                  in Kiev universities Max became a co-founder in Kiev based Software Development studio.
+                  Late 2013 Max got interested in Bitcoin, before joining us he founded Bitcoin
+                  Foundation Ukraine and Satoshi Square Kiev and even obtained a management
+                  position in UK based Bitcoin Startup. Outside of professional life you
+                  can find Max riding any kind of a board.
+
+          li.board__tile
+            .member.member_tile.js-tooltip
+              .member__pic
+                img(src="img/team/vasilije.jpg", alt="")
+              .member__about
+                strong.member__name
+                  | Vasilije
+                span.member__post
+                  | Product manager
+                p.text.
+                  After completing Bachelor degree in Physics and Master degree in Management
+                  in Kiev universities Max became a co-founder in Kiev based Software Development studio.
+                  Late 2013 Max got interested in Bitcoin, before joining us he founded Bitcoin
+                  Foundation Ukraine and Satoshi Square Kiev and even obtained a management
+                  position in UK based Bitcoin Startup. Outside of professional life you
+                  can find Max riding any kind of a board.
+
+          li.board__tile
+            .member.member_tile.js-tooltip
+              .member__pic
+                img(src="img/team/sergey.jpg", alt="")
+              .member__about
+                strong.member__name
+                  | Sergey
+                span.member__post
+                  | Product manager
+                p.text.
+                  After completing Bachelor degree in Physics and Master degree in Management
+                  in Kiev universities Max became a co-founder in Kiev based Software Development studio.
+                  Late 2013 Max got interested in Bitcoin, before joining us he founded Bitcoin
+                  Foundation Ukraine and Satoshi Square Kiev and even obtained a management
+                  position in UK based Bitcoin Startup. Outside of professional life you
+                  can find Max riding any kind of a board.
+
+          li.board__tile
+            .member.member_tile.js-tooltip
+              .member__pic
+                img(src="img/team/omar.jpg", alt="")
+              .member__about
+                strong.member__name
+                  | Omar
+                span.member__post
+                  | Product manager
+                p.text.
+                  After completing Bachelor degree in Physics and Master degree in Management
+                  in Kiev universities Max became a co-founder in Kiev based Software Development studio.
+                  Late 2013 Max got interested in Bitcoin, before joining us he founded Bitcoin
+                  Foundation Ukraine and Satoshi Square Kiev and even obtained a management
+                  position in UK based Bitcoin Startup. Outside of professional life you
+                  can find Max riding any kind of a board.
+
+          li.board__tile
+            .member.member_tile.js-tooltip
+              .member__pic
+                img(src="img/team/nick.jpg", alt="")
+              .member__about
+                strong.member__name
+                  | Nick
+                span.member__post
+                  | Product manager
+                p.text.
+                  After completing Bachelor degree in Physics and Master degree in Management
+                  in Kiev universities Max became a co-founder in Kiev based Software Development studio.
+                  Late 2013 Max got interested in Bitcoin, before joining us he founded Bitcoin
+                  Foundation Ukraine and Satoshi Square Kiev and even obtained a management
+                  position in UK based Bitcoin Startup. Outside of professional life you
+                  can find Max riding any kind of a board.
+        .btn-wrapper
+          a.btn.btn_large.btn_darkblue(href="#")
+            | View our team members
+
+      .tab-content
+        .member
+          .member__pic
+            img(src="img/team/tim.jpg", alt="")
+          .member__info
+            dl.member__name
+              dt Tim Rehder
+              dd CEO and co-founder
+            p.text.
+              Sed molestie augue sit amet leo consequat posuere.
+              Vestibulum ante ipsum primis in faucibus orci luctus et
+              ultrices posuere cubilia Curae; Proin vel ante a orci
+              tempus eleifend ut et magna.
+
+        .member
+          .member__pic
+            img(src="img/team/julian.jpg", alt="")
+          .member__info
+            dl.member__name
+              dt Julian Mautner
+              dd Co-founder
+            p.text.
+              Sed molestie augue sit amet leo consequat posuere.
+              Vestibulum ante ipsum primis in faucibus orci luctus et
+              ultrices posuere cubilia Curae; Proin vel ante a orci
+              tempus eleifend ut et magna.
+
+        .member
+          .member__pic
+            img(src="img/team/oskar.jpg", alt="")
+          .member__info
+            dl.member__name
+              dt Oskar Paolini
+              dd Head of Risk Management
+            p.text.
+              Sed molestie augue sit amet leo consequat posuere.
+              Vestibulum ante ipsum primis in faucibus orci luctus et
+              ultrices posuere cubilia Curae; Proin vel ante a orci
+              tempus eleifend ut et magna.
+        .btn-wrapper
+          a.btn.btn_large.btn_darkblue(href="#")
+            | View our team members
+    .l-column
+      .tab
+        button.tab__btn.is-active(type="button",data-title="Title1") Founders
+        button.tab__btn(type="button",data-title="Title2") Team
+        button.tab__btn(type="button",data-title="Title3") Board/Advisors
+  //END board
+
+  //- .btn-wrapper
+  //-   a.btn.btn_large.btn_darkblue(href="#")
+  //-     | View our team members

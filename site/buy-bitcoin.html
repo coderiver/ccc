@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=1040">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/screen.css"><!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+  </head>
+  <body>
+    <!--BEGIN out-->
+    <div class="out">
+     
+      <!-- begin l-content  -->
+      <div class="l-content is-wide"><div><!-- begin in -->
+        <div class="in">
+          <ul class="tabs">
+            <li><a href="./Cubits_files/Cubits.html" class="is-active">DIRECT BUY</a></li>
+            <li><a href="https://cubits.test/#buy/bank_transfer">WITH BANK TRANSFER</a></li>
+          </ul>
+          <!-- begin exchange  -->
+          <div class="exchange">
+
+            <div class="exchange__col">
+              <label for="">Spend</label>
+              <div class="input-buy" id="sender_block">
+                <div class="input-buy__tilda">~</div>
+                <input type="text" name="" value="" id="sender_amount" placeholder="0.00" style="border: 4px solid rgb(30, 190, 187);">
+                <div class="error" id="sender_amount_error" style="display:none;"></div>
+                <div class="input-buy__currency input-buy__currency_drop">
+                  <div class="input-buy__currencyvalue">EUR</div>
+                  <i class="icon-arrowdown"></i>
+                  <div class="input-buy__currencydrop">
+                    <ul>
+                      <li>AUD</li>
+                      <li>CAD</li>
+                      <li>CHF</li>
+                      <li>CZK</li>
+                      <li>DKK</li>
+                      <li>EUR</li>
+                      <li>GBP</li>
+                      <li>HRK</li>
+                      <li>HUF</li>
+                      <li>JPY</li>
+                      <li>NOK</li>
+                      <li>PLN</li>
+                      <li>RUB</li>
+                      <li>SEK</li>
+                      <li>TRY</li>
+                      <li>USD</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="exchange__col">
+              <label for="">To get</label>
+              <div class="input-buy is-tilda" id="receiver_block">
+                <div class="input-buy__tilda">~</div>
+                <input type="text" name="" value="" id="receiver_amount" placeholder="">
+                <div class="error" id="receiver_amount_error" style="display:none;"></div>
+                <div class="input-buy__currency">BTC</div>
+              </div>
+            </div>
+          </div>
+          <!-- end exchange -->
+        </div>
+        <!-- end in -->
+        <div class="hr"></div>
+        <!-- begin in -->
+        <div class="in">
+
+          <!-- begin paywith -->
+          <div class="paywith">
+            <h3>Choose payment method <a href="https://cubits.test/#" class="icon-help"></a></h3>
+            <ul class="paywith__services">
+            <li><a href="https://cubits.test/#" class="is-active">
+        <i class="icon-sofort-color"></i>
+      </a>
+      </li><li><a href="https://cubits.test/#" class="">
+        <i class="icon-skrill-color"></i>
+      </a>
+      </li><li><a href="https://cubits.test/#" class="is-disabled">
+        <i class="icon-dotpay"></i>
+      </a>
+      </li><li><a href="https://cubits.test/#" class="">
+        <i class="icon-secure_trading"></i>
+      </a>
+      </li><li><a href="https://cubits.test/#" class="">
+        <i class="icon-okpay-color"></i>
+      </a>
+      </li><li><a id="cubio" href="https://cubits.test/#" class="cashaccountoption is-filled is-disabled">
+        <div class="cashaccount__value">
+          <h3>
+            <i class="icon-cube_logo_dark"></i>
+            Cash account
+          </h3>
+          <div class="cashaccount__money">0.00 <span>EUR</span></div>
+        </div>
+      </a> 
+      </li></ul>
+          </div>
+          <!-- end paywith -->
+
+          <!-- begin direct_buy_warning -->
+          <div id="direct_buy_warning">
+            Current Bitcoin price is guaranteed, transaction confirmation may take up to 2 days
+          </div>
+          <!-- end direct_buy_warning -->
+
+          <!-- begin confirm -->
+          <div class="confirm">
+            <div class="confirm__amount">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <td class="table__text"><strong>You are buying</strong></td>
+                    <td class="table__amount"><span id="total_receiver_amount">0.00</span> <span class="table__currency">BTC</span></td>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td class="table__text">Buy price <span id="exchange_rate_wrap" style="display:none;"><span id="total_exchange_rate_sender">0.00</span> <span class="total_sender_currency">EUR</span>/BTC</span></td>
+                  <td class="table__amount"><span id="amount_minus_fees">0.00</span> <span class="table__currency total_sender_currency">EUR</span></td>
+                </tr>
+                <tr>
+                  <td class="table__text">Payment fee</td>
+                  <td class="table__amount">+ <span id="total_fee_amount">0.00</span> <span class="table__currency total_sender_currency">EUR</span></td>
+                </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td class="table__text">
+                      Total
+                    </td>
+                    <td class="table__amount">
+                      <span id="total_sender_amount">0.00</span> <span class="table__currency total_sender_currency">EUR</span>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            <div class="confirm__button is-disabled">Confirm</div>
+          </div>
+          <!-- /confirm -->
+
+        </div>
+        <!-- end in -->
+      </div></div>
+      <!-- end l-content -->
+    </div>
+    <!--END out-->
+    <!--LOAD SCRIPTS-->
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/slick.min.js"></script>
+    <script src="js/lib/jquery.tooltipster.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

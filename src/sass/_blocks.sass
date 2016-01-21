@@ -1,0 +1,551 @@
+.bold-title
+  display: block
+  +f(b, 32, 0.03)
+  text-transform: uppercase
+  color: inherit
+  text-align: center
+  line-height: 1.375
+
+.bold-title_mrg
+  margin-bottom: 70px
+
+
+.title
+  display: block
+  margin-bottom: 40px
+  text-align: center
+  +f(r, 28, 0.025)
+  line-height: 1.357
+  text-transform: uppercase
+  color: inherit
+  > b, strong
+    +f(demi-b)
+  .icon
+    display: block
+    margin: auto
+    font-size: 68px
+    margin-bottom: 60px
+  .icon-heart-bitcoin
+    margin-bottom: 27px
+
+b.title,
+strong.title
+  +f(demi-b)
+
+.title_large
+  margin-bottom: 70px
+  +f(b, 45, 0.075)
+  line-height: 1.35
+  .icon
+    margin-bottom: 40px
+
+.title_small
+  font-size: 18px
+  margin-bottom: 12px
+
+.title_smaller
+  font-size: 14px
+  text-align: left
+  margin: 15px 0
+  &:first-child
+    margin-top: 0
+  &:last-child
+    margin-bottom: 0
+
+.title_white
+  color: #FFF
+
+.title_left
+  text-align: left
+
+.title_mrg0
+  margin: 0
+
+.title_mrgtop
+  margin-top: 70px
+
+
+.small-text
+  +f(r, 14)
+  line-height: 1.35
+  color: $darkblue
+
+
+.list-circle
+  +f(demi-b, 18)
+  line-height: 1.667
+  color: $darkblue
+  > li
+    padding-left: em(18,18)
+    position: relative
+    &:before
+      content: ""
+      position: absolute
+      top: em(12,18)
+      left: 0
+      width: 0
+      height: 0
+      border: 3px solid
+      border-radius: 50%
+  a
+    color: inherit
+
+.custom-list
+  padding: 0 30px
+
+.custom-list__item
+  padding-left: 100px
+  position: relative
+  line-height: 50px
+  &:not(:last-child)
+    margin-bottom: 30px
+  &:nth-child(2n)
+    .custom-list__marker:before
+      background: $darkblue
+  &:nth-child(3n)
+    .custom-list__marker:before
+      background: $lightblue
+
+.custom-list__marker
+  position: absolute
+  z-index: 0
+  top: 3px
+  left: 0
+  width: 50px
+  height: 50px
+  box-sizing: border-box
+  padding: 24px 12px 8px 8px
+  text-align: right
+  color: #FFF
+  +f(r, 18)
+  line-height: 18px
+  &:before
+    content: ""
+    position: absolute
+    z-index: -1
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: $yellow
+    +skew
+
+.custom-list__text
+  display: inline-block
+  vertical-align: middle
+  +f(m, 18)
+  line-height: 1.67
+
+
+.form
+  .btn:last-child
+    display: block
+    margin: 27px auto 0
+
+.form__column
+  float: left
+  width: percentage(420/640)
+
+.form__aside
+  font-size: 14px
+  float: right
+  width: percentage(165/640)
+  .title
+    font-size: 14px
+  .text
+    font-size: 14px
+
+.form__title
+  display: block
+  margin-bottom: 14px
+  text-transform: uppercase
+  text-align: center
+  +f(r, 18)
+  line-height: 1.4
+  > b, strong
+    +f(b)
+
+.form__text
+  +f(m, 14)
+  line-height: 1.37
+  color: $darkblue
+  .checkbox
+    +f(m)
+  &:not(:last-child)
+    margin-bottom: 12px
+
+.form__body
+  position: relative
+
+.form__group
+  margin-bottom: 30px
+  + .checkbox
+    margin-top: 25px
+
+.form__links
+  margin-top: 11px
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+
+.form__link
+  +f(demi-b, 14)
+  color: $lightblue
+
+.form__footer
+  margin-top: 9px
+  +clr
+  .btn
+    float: right
+    margin-right: 8px
+
+.form_white-bounds
+  padding: 22px 40px 30px
+  background: none
+  border: 6px solid #FFF
+  box-shadow: 0 0 11px rgba(0, 0, 0, 0.11)
+
+.form_narrow
+  max-width: 320px
+  margin-left: auto
+  margin-right: auto
+
+// .form_sign-in
+
+.form_sign-in
+  .form__aside
+    +r(700)
+      float: none
+      width: auto 
+      margin-top: 30px 
+  .form__column
+    +r(700)
+      float: none
+      width: auto 
+
+.form-message
+  position: absolute
+  z-index: 2
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  +vertical
+  white-space: nowrap
+  background: #FFF
+  border: 2px solid
+
+.form-message__close
+  position: absolute
+  top: 6px
+  right: 6px
+  background: none
+  width: 30px
+  height: 30px
+  transition: color 0.15s linear
+  &:hover
+    color: $yellow
+
+.form-message__inner
+  display: inline-block
+  vertical-align: middle
+  white-space: normal
+  font-size: 18px
+
+.form-message__title
+  display: block
+  margin-bottom: 16px
+  +f(b, 14)
+  text-transform: uppercase
+
+
+.error-msg
+  display: block
+  margin-top: 5px
+  color: $error
+  +f(r, 14)
+  line-height: 1.43
+  .checkbox + &
+    margin-top: 0
+
+
+
+.field
+  position: relative
+  margin: 5px 0
+  &:first-child
+    margin-top: 0
+  &:last-child
+    margin-bottom: 0
+
+
+.input
+  display: block
+  width: 100%
+  height: 44px
+  padding: 10px 14px
+  border: 2px solid $darkblue
+  border-radius: 0
+  box-sizing: border-box
+  +f(m, 16)
+  line-height: 1.42
+  color: $darkblue
+  // text-transform: uppercase
+  background: none
+  appearance: none
+  +placeholder
+    +f(r, 16)
+    line-height: 1.42
+    color: $darkblue
+    transition: opacity 0.1s linear
+  &:focus
+    +placeholder
+      opacity: 0
+
+.input_shadow
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), inset 0 -3px 15px rgba(255, 255, 255, 0.38)
+
+.input_w320
+  max-width: 320px
+
+textarea.input
+  resize: none
+  height: 166px
+
+
+.divider
+  width: 100%
+  max-width: 960px
+  margin: auto
+  background: $darkblue
+  height: 6px
+  border: none
+
+.divider_mrg80
+  margin-top: 80px
+  margin-bottom: 80px
+
+.divider_mrg60
+  margin-top: 60px
+  margin-bottom: 60px
+
+.divider_mrg30
+  margin-top: 30px
+  margin-bottom: 30px
+
+.divider_md
+  max-width: 830px
+
+.divider_sm
+  max-width: 640px
+
+
+.clearfix
+  display: table
+  width: 100%
+  clear: both
+
+
+
+.btn
+  display: inline-block
+  vertical-align: top
+  position: relative
+  z-index: 0
+  height: 45px
+  padding: 0 20px
+  background: none
+  box-sizing: border-box
+  +f(b, 14, 0.07)
+  text-align: center
+  text-transform: uppercase
+  color: $darkblue
+  transition: color 0.15s linear
+  white-space: nowrap
+  overflow: visible
+  &:before
+    content: ""
+    position: absolute
+    z-index: -1
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: #FFF
+    transition: background 0.15s linear
+    +skew
+  .title + &
+    margin-top: 6px
+  &:hover
+    color: $darkblue
+    &:before
+      background: $yellow
+
+a.btn
+  text-decoration: none
+  line-height: 45px
+
+.btn_yellow
+  &:before
+    background: $yellow
+  &:hover
+    &:before
+      background: $lightblue
+
+.btn_darkblue
+  color: #FFF
+  &:before
+    background: $darkblue
+  &:hover
+    &:before
+      background: $yellow
+  .toparea__text_buy-btc &
+    &:hover
+      &:before
+        background: $lightblue
+
+.btn_center
+  display: block
+  margin: auto
+
+.btn_large
+  height: 58px
+  padding-left: 40px
+  padding-right: 40px
+a.btn_large
+  line-height: 58px
+
+.btn_share
+  height: 58px
+  width: 58px
+  padding: 0
+  .icon
+    vertical-align: middle
+  .icon-fb
+    font-size: 33px
+  .icon-tw
+    font-size: 26px
+  .icon-in
+    font-size: 32px
+a.btn_share
+  line-height: 58px
+
+.btn_w220
+  width: 220px
+  padding-left: 20px
+  padding-right: 20px
+
+.btn_w300
+  width: 300px
+
+.btn_w365
+  width: 365px
+  
+.btn_w395
+  width: 395px
+
+.social-btn
+  text-decoration: none
+  display: inline-block
+  vertical-align: middle
+  background: none
+  +f(m, 14)
+  margin-right: 40px
+  &:last-child
+    margin-right: 0
+  .icon
+    display: inline-block
+    vertical-align: middle
+    + *
+      margin-left: 5px
+  .icon-tw
+    font-size: 16px
+  .icon-fb
+    font-size: 20px
+  .icon-gplus
+    font-size: 19px
+  > span
+    display: inline-block
+    vertical-align: middle
+  &:hover
+    color: $yellow
+
+
+.mail-to
+  display: block
+  text-transform: uppercase
+  color: $lightblue
+  +f(b, 14)
+  a
+    text-decoration: none
+    border-bottom: 2px solid
+    line-height: 2.14
+  &:not(:first-child)
+    margin-top: 40px
+
+
+.checkbox
+  display: inline-block
+  +f(r, 14)
+  line-height: 2
+  position: relative
+  user-select: none
+  > input
+    position: absolute
+    top: 50%
+    left: 0
+    opacity: 0
+    margin-top: -5px
+  > span
+    display: inline-block
+    vertical-align: middle
+    padding-left: 30px
+    position: relative
+    line-height: 1.4
+    &:before,
+    &:after
+      content: ""
+      position: absolute
+      left: 0
+      top: 1px
+      box-sizing: border-box
+    &:before
+      width: 16px
+      height: 16px
+      border: 2px solid
+    &:after
+      display: none
+      top: 5px
+      left: 4px
+      width: 0px
+      height: 0px
+      border: 4px solid
+      border-radius: 50%
+  input:checked ~ span:after
+    display: block
+
+.checkbox_dark
+  +f(m)
+  color: $darkblue
+
+
+.marked-list
+  padding-left: 30px
+  > li
+    margin: 10px 0
+
+ul.marked-list
+  list-style-type: disc
+ol.marked-list
+  list-style-type: decimal
+
+.marked-list_no-mrg
+  > li
+    margin: 0
+
+.footnote
+  display: block
+  font-size: 10px
+  text-align: right
+  margin-top: 10px

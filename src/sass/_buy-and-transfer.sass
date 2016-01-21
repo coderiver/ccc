@@ -1,0 +1,2122 @@
+.in, .footer, .nav .nav__in, .a .a__table, .amore
+  width: 850px
+  margin: 0 auto
+
+.tabs
+  *zoom: 1
+  margin: 31px 0 25px
+  list-style: none
+  font-size: 0
+  text-align: center
+  &:after
+    content: " "
+    display: table
+    clear: both
+  li
+    display: inline-block
+    &.is-active, &:hover
+      a
+        color: #1ebebb
+        border-bottom-color: #1ebebb
+  a
+    display: inline-block
+    width: 324px
+    font-size: 18px
+    font-family: bold, sans-serif
+    color: black
+    text-transform: uppercase
+    text-decoration: none
+    border-bottom: 5px solid #cdcdd4
+    text-align: center
+    letter-spacing: 3px
+    padding-bottom: 10px
+    padding-top: 2px
+  &.tabs_small
+    margin: 18px 0 24px 0 
+    a
+      text-transform: none
+      width: 200px
+      letter-spacing: 0 
+
+.tabs__wrap
+  position: relative
+  .tabs__add i
+    position: absolute
+    right: 20%
+    color: #94c4d1
+    font-size: 30px
+    cursor: pointer
+    top: 0
+    color: #94c4d1
+    text-decoration: none
+    font-size: 20px
+    background: #1fbfbb
+    width: 28px
+    height: 28px
+    line-height: 28px
+    text-align: center
+    border-radius: 28px
+    box-shadow: 0 1px 1px rgba(53, 53, 88, 0.3)
+    color: white
+    text-decoration: none
+    font-style: normal
+    +f(demi-b)
+    font-weight: normal
+  .tabs__help i
+    position: absolute
+    right: 20%
+    color: #94c4d1
+    font-size: 24px
+    text-decoration: none
+    top: 0
+    cursor: pointer
+    z-index: 5
+
+.hr
+  border-top: 1px solid #e6eef2
+  margin: 10px 0
+
+.exchange
+  margin-bottom: 24px
+  *zoom: 1
+  &:after
+    content: " "
+    display: table
+    clear: both
+  &.exchange_spaced
+    margin-bottom: 50px
+  .exchange__col
+    float: left
+    width: 420px
+    + .exchange__col
+      float: right
+  label
+    font-size: 19px
+    display: block
+    position: relative
+    margin-bottom: 12px
+    line-height: 19px
+    +f(m)
+    font-weight: normal
+    color: #79798c
+    span
+      +f(r)
+      font-weight: normal
+      font-size: 17px
+      color: #c5c5c5
+      position: absolute
+      right: 0
+  .input-buy .error
+    padding: 10px
+    font-size: 10px
+
+.input-buy
+  display: block
+  position: relative
+  input
+    display: block
+    padding: 0 23px
+    border: 2px solid #95c4d1
+    border-radius: 2px
+    box-shadow: inset 3px 3px 0 #eaeaea
+    background: white
+    box-sizing: border-box
+    height: 66px
+    line-height: 66px
+    width: 100%
+    +f(m)
+    font-weight: normal
+    font-size: 31px
+    color: #cbcbcb
+    color: #353556
+    line-height: normal
+    &:focus
+      border-color: #1ebebb
+      color: #353556
+      + .input-buy__currency
+        background-color: #1ebebb
+        color: white
+    &[disabled]
+      color: #cbcbcb !important
+  &.input-buy_icon input
+    padding-right: 70px
+  &.is-tilda input, &.with-tilda input
+    padding-left: 60px
+    color: #cbcbcb !important
+  .input-buy__tilda
+    position: absolute
+    left: 26px
+    top: 0
+    height: 66px
+    line-height: 66px
+    font-size: 31px
+    color: #677689
+    +f(m)
+    font-weight: normal
+    display: none
+  &.with-tilda .input-buy__tilda, &.is-tilda .input-buy__tilda
+    display: block
+  .input-buy__currency
+    width: 60px
+    height: 46px
+    line-height: 46px
+    text-align: center
+    position: absolute
+    right: 14px
+    top: 10px
+    border-radius: 2px
+    background: #95c4d1
+    font-size: 17px
+    +f(demi-b)
+    font-weight: normal 
+    color: white
+    &.input-buy__currency_subtle
+      background: transparent
+      color: #1ebebb
+    &.input-buy__currency_drop
+      width: 75px
+      background: #1ebebb
+      cursor: pointer
+      i
+        display: inline-block
+        margin-left: 3px 
+        color: white
+        vertical-align: middle
+        font-size: 11px
+        transform: rotate(90deg)
+      .input-buy__currencydrop
+        display: none
+      .input-buy__currencyvalue
+        position: relative
+        z-index: 3
+        display: inline-block
+      &.is-opendrop
+        z-index: 10
+        .input-buy__currencyvalue
+          z-index: 12
+          color: #1ebebb
+        i
+          color: #000
+          position: relative
+          z-index: 20
+        .input-buy__currencydrop
+          display: block
+          position: absolute
+          left: 0
+          top: 0
+          right: 0
+          background: white
+          padding-top: 46px
+          z-index: 11
+          border: 2px solid #1ebebb
+          ul
+            list-style: none
+          li
+            border-top: 1px solid #e6eef2
+            height: 27px
+            line-height: 27px
+            cursor: pointer
+            background: white
+            text-align: center
+            color: #575770
+            text-transform: uppercase
+            font-size: 12px
+            +f(m)
+            font-weight: normal
+            &:hover
+              background: #f9f9f9
+              color: #1ebebb
+            &:first-child
+              border-top: none
+  .input-buy__type
+    position: absolute
+    right: 0
+    top: 0
+    bottom: 0
+    text-align: center
+    line-height: 47px
+    width: 50px
+    text-align: center
+    background: #95c4d1
+    color: white
+    font-size: 25px
+  &.input-buy_small
+    width: 340px
+    margin: 0 auto 15px auto
+    &.input-buy_phone
+      input
+        padding-left: 70px
+      .input-buy__phonecode
+        position: absolute
+        left: 0
+        top: 0
+        bottom: 0
+        background: #95c4d1
+        border-top-left-radius: 4px
+        border-bottom-left-radius: 4px
+        color: white
+        line-height: 46px
+        width: 52px
+        text-align: center
+        +f(demi-b)
+        font-weight: normal
+        font-size: 17px
+        &:before
+          position: absolute
+          content: " "
+          top: 2px
+          bottom: 2px
+          width: 3px
+          right: -3px
+          background: #eaeaea
+    .input-buy__label
+      display: block
+      font-size: 15px
+      +f(m)
+      font-weight: normal
+      color: #34495e
+      margin-bottom: 10px
+      span
+        display: block
+        font-size: 14px
+        font-family: aital, sans-serif
+        font-weight: normal
+        color: #a4a4b0
+    input
+      font-size: 17px
+      height: 46px
+      line-height: 46px
+      line-height: 1
+      padding: 0 17px 0 17px
+      padding-top: 0px
+      line-height: auto
+      line-height: normal
+    .input-buy__icon
+      position: absolute
+      right: 10px
+      bottom: 6px
+      top: auto
+      font-size: 20px
+      color: #93c4d2
+  &.input-buy_smaller
+    width: 137px !important
+    display: inline-block
+    float: left
+    + .input-buy_smaller
+      margin-right: 16px
+  .input-buy__icon
+    position: absolute
+    right: 29px
+    top: 20px
+    font-size: 20px
+    color: #93c4d2
+    font-size: 25px
+    &.icon-qr
+      border: 2px solid #93c4d2
+      line-height: 1
+      height: 40px
+      line-height: 50px
+      display: inline-block
+      width: 60px
+      text-align: center
+      top: 11px
+      right: 10px
+  input:focus + .input-buy__icon
+    color: #179290
+  .error
+    position: absolute
+    padding: 14px
+    background: #f6e0e6
+    +f(m)
+    font-weight: normal
+    font-size: 13px
+    color: #ed1847
+    border-radius: 3px
+    top: 70px
+    left: 0
+    z-index: 200
+    width: 100%
+    box-sizing: border-box
+    &:before
+      width: 20px
+      height: 20px
+      background: #f6e0e6
+      content: " "
+      -ms-transform: rotate(45deg)
+      -webkit-transform: rotate(45deg)
+      transform: rotate(45deg)
+      left: 60px
+      top: -9px
+      position: absolute
+  &.input-buy_small .error
+    top: auto
+    bottom: -50px
+  &.input-buy_important input
+    border-color: #1ebebb
+    color: #1ebebb
+  &.input-buy_error2
+    input
+      border-color: #ea294c
+    .error2
+      color: #ea294c
+      font-size: 11px
+      display: block
+      padding-top: 4px
+      white-space: nowrap
+    .input-buy__icon
+      bottom: 24px
+
+
+.errorstatus
+  position: absolute
+  right: -245px
+  width: 230px
+  bottom: 10px
+  font-size: 15px
+  +f(m)
+  font-weight: normal
+  color: #ed1847
+  padding: 0
+  line-height: 1
+  i
+    font-size: 25px
+    margin-right: 15px
+    vertical-align: middle
+    position: relative
+    top: 2px
+  &.is-ok
+    color: #23c7c4
+
+
+#direct_buy_warning, #bank_transfer_warning
+  margin: 15px 0
+  width: 100%
+  font-size: 12px 
+  color: black
+  +f(r)
+
+
+#direct_buy_warning.is-invisible, #bank_transfer_warning.is-invisible
+  display: none
+
+
+.paywith, .cashout
+  margin: 26px 0
+  color: #79798c
+  *zoom: 1
+
+
+.paywith:after, .cashout:after
+  content: " "
+  display: table
+  clear: both
+
+
+.paywith h3, .cashout h3
+  font-size: 19px
+  color: #79798c
+  position: relative
+  margin-bottom: 10px
+  font-weight: normal
+  +f(m)
+  font-weight: normal
+
+
+.paywith h3 a, .cashout h3 a
+  color: #94c4d1
+  text-decoration: none
+  font-size: 22px
+  display: inline-block
+  margin-left: 10px
+  vertical-align: middle
+  position: relative
+  top: -1px
+
+.paywith h3 a:hover, .cashout h3 a:hover
+  color: #1ebebb
+
+.paywith .paywith__services, .cashout .paywith__services
+  list-style: none
+
+.paywith .paywith__services li, .cashout .paywith__services li
+  float: left
+  width: 133px
+  margin-right: 10px
+  margin-bottom: 11px
+
+.paywith .paywith__services li:last-child, .cashout .paywith__services li:last-child
+  margin: 0
+
+.paywith .paywith__services li:nth-child(6n), .cashout .paywith__services li:nth-child(6n)
+  margin-right: 0
+
+.paywith .paywith__services a, .cashout .paywith__services a
+  display: block
+  text-align: center
+  text-decoration: none
+  color: #353556
+  font-size: 70px
+  height: 66px
+  line-height: 66px
+  background: white
+  border-radius: 2px
+  box-shadow: inset 0 0 0 2px #95c4d1, 0 0 2px rgba(53, 53, 88, 0.3)
+  position: relative
+  line-height: normal
+
+.paywith .paywith__services a .icon-skrill, .paywith .paywith__services a .icon-skrill-color, .cashout .paywith__services a .icon-skrill, .cashout .paywith__services a .icon-skrill-color, .paywith .paywith__services a .icon-sofort, .paywith .paywith__services a .icon-sofort-color, .cashout .paywith__services a .icon-sofort, .cashout .paywith__services a .icon-sofort-color, .paywith .paywith__services a .icon-okpay-text, .cashout .paywith__services a .icon-okpay-text, .paywith .paywith__services a .icon-okpay, .paywith .paywith__services a .icon-okpay-color, .cashout .paywith__services a .icon-okpay, .cashout .paywith__services a .icon-okpay-color, .paywith .paywith__services a .icon-obt-logo-dark, .cashout .paywith__services a .icon-obt-logo-dark
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  text-align: center
+  line-height: normal
+  -webkit-transform: scale(1.3)
+  -ms-transform: scale(1.3)
+  transform: scale(1.3)
+
+.paywith .paywith__services a .icon-obt-logo-dark, .cashout .paywith__services a .icon-obt-logo-dark
+  top: 2px
+
+.paywith .paywith__services a .icon-sofort, .paywith .paywith__services a .icon-sofort-color, .cashout .paywith__services a .icon-sofort, .paywith .paywith__services a .icon-sofort, .cashout .paywith__services a .icon-sofort-color
+  top: 3px
+
+.paywith .paywith__services a .icon-okpay-text, .cashout .paywith__services a .icon-okpay-text, .paywith .paywith__services a .icon-okpay, .paywith .paywith__services a .icon-okpay-color, .cashout .paywith__services a .icon-okpay, .cashout .paywith__services a .icon-okpay-color
+  top: 2px
+
+.paywith .paywith__services a .icon-dotpay, .cashout .paywith__services a .icon-dotpay
+  background: url(../img/media/dotpay-color.svg) no-repeat 0 0
+  background-size: 100px 50px 100%
+  width: 100px
+  height: 50px
+  display: inline-block
+  background-size: contain
+  display: inline-block
+  margin: 20px 0 0 0
+
+.paywith .paywith__services a .icon-secure_trading, .cashout .paywith__services a .icon-secure_trading
+  background: url(../img/media/visamaster-color.png) no-repeat 0 0
+  background-size: contain
+  display: inline-block
+  margin: 17px 0 0 0
+  width: 110px
+  height: 50px
+
+.paywith .paywith__services a.is-active, .cashout .paywith__services a.is-active, .paywith .paywith__services a:hover, .cashout .paywith__services a:hover
+  box-shadow: inset 0 0 0 4px #1ebebb
+  background: #f2fcfb
+
+.paywith .paywith__services a.is-disabled, .cashout .paywith__services a.is-disabled, .paywith .paywith__services a.is-disabled:hover, .cashout .paywith__services a.is-disabled:hover
+  box-shadow: inset 0 0 0 2px #f6f6f6
+  background: white
+
+.paywith .paywith__services a.is-disabled i, .cashout .paywith__services a.is-disabled i, .paywith .paywith__services a.is-disabled:hover i, .cashout .paywith__services a.is-disabled:hover i
+  opacity: 0.4
+
+.paywith .paywith__services a.cashaccountoption, .cashout .paywith__services a.cashaccountoption
+  font-weight: normal
+  text-align: center
+  font-size: 12px
+  text-transform: uppercase
+  +f(r)
+  font-weight: normal
+
+.paywith .paywith__services a.cashaccountoption .cashaccount__money, .cashout .paywith__services a.cashaccountoption .cashaccount__money
+  font-size: 13px
+  +f(demi-b)
+  font-weight: normal
+  color: #353458
+
+.paywith .paywith__services a.cashaccountoption .cashaccount__money span, .cashout .paywith__services a.cashaccountoption .cashaccount__money span
+  color: #00bfbc
+
+.paywith .paywith__services a.cashaccountoption .cashaccount__value, .cashout .paywith__services a.cashaccountoption .cashaccount__value
+  position: relative
+  z-index: 10
+
+
+.paywith .paywith__services a.cashaccountoption .cashaccount__value h3, .cashout .paywith__services a.cashaccountoption .cashaccount__value h3
+  font-weight: normal
+  text-align: center
+  font-size: 10px
+  text-transform: uppercase
+  letter-spacing: 1px
+  color: #353556
+  margin-bottom: 0
+  +f(m)
+  font-weight: normal
+
+
+.paywith .paywith__services a.cashaccountoption .cashaccount__value h3 i, .cashout .paywith__services a.cashaccountoption .cashaccount__value h3 i
+  margin: -3px 0 0 0
+
+.paywith .paywith__services a.cashaccountoption.is-filled .cashaccount__value, .cashout .paywith__services a.cashaccountoption.is-filled .cashaccount__value
+  line-height: 45px
+
+.paywith .paywith__services a.cashaccountoption.is-filled .cashaccount__value .icon-arrowdown, .cashout .paywith__services a.cashaccountoption.is-filled .cashaccount__value .icon-arrowdown
+  position: relative
+  top: 7px
+
+.paywith .paywith__services a.cashaccountoption.is-filled .cashaccount__money, .cashout .paywith__services a.cashaccountoption.is-filled .cashaccount__money
+  line-height: 15px
+  position: relative
+  top: -5px
+
+.paywith .paywith__services a.cashaccountoption.is-disabled, .cashout .paywith__services a.cashaccountoption.is-disabled
+  box-shadow: inset 0 0 0 2px #e6eef2
+  -webkit-filter: grayscale(100%)
+  -webkit-backface-visibility: hidden
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)"
+  opacity: 0.4
+
+.paywith .paywith__services a i.icon-cube_logo_dark, .cashout .paywith__services a i.icon-cube_logo_dark, .paywith .paywith__services a i.icon-cube_logo_dark i, .cashout .paywith__services a i.icon-cube_logo_dark i
+  background: url(../img/media/cubits.svg) no-repeat 0 0
+  background-size: 26px 26px 100%
+  width: 26px
+  height: 26px
+  display: inline-block
+  background-size: contain
+  display: inline-block
+  vertical-align: middle
+  margin-right: 10px
+
+.paywith .paywith__services a i.icon-cube_logo_dark.is-disabled, .cashout .paywith__services a i.icon-cube_logo_dark.is-disabled
+  box-shadow: inset 0 0 0 2px #e6eef2
+  -webkit-filter: grayscale(100%)
+  -webkit-backface-visibility: hidden
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)"
+  opacity: 0.5
+
+.paywith .paywith__services a i.icon-cube_logo_dark.is-active, .cashout .paywith__services a i.icon-cube_logo_dark.is-active
+  line-height: 1
+  padding-top: 14px
+  height: 52px
+  +f(demi-b)
+  font-weight: normal
+
+.paywith .paywith__services a i.icon-cube_logo_dark.is-active span, .cashout .paywith__services a i.icon-cube_logo_dark.is-active span
+  display: block
+  letter-spacing: 0
+  color: #353458
+
+.paywith .paywith__services a i.icon-cube_logo_dark.is-active span b, .cashout .paywith__services a i.icon-cube_logo_dark.is-active span b
+  font-weight: normal
+  color: #1ebebb
+
+.paywith .paywith__services a i.icon-cube_logo_dark.is-filled, .cashout .paywith__services a i.icon-cube_logo_dark.is-filled
+  line-height: 1
+  padding-top: 14px
+  height: 52px
+
+.paywith .paywith__services a i.icon-cube_logo_dark.is-filled span, .cashout .paywith__services a i.icon-cube_logo_dark.is-filled span
+  display: block
+  line-height: 1
+  letter-spacing: 0
+  color: #353458
+
+.paywith .paywith__services a i.icon-cube_logo_dark.is-filled span b, .cashout .paywith__services a i.icon-cube_logo_dark.is-filled span b
+  font-weight: normal
+  color: #1ebebb
+
+.paywith.paywith_dos .paywith__services li, .paywith_dos.cashout .paywith__services li
+  width: 420px
+
+.paywith.paywith_dos .paywith__services li + li, .paywith_dos.cashout .paywith__services li + li
+  float: right
+  width: 420px
+
+.paywith.paywith_dos .paywith__services .paywith__text, .paywith_dos.cashout .paywith__services .paywith__text
+  font-size: 15px
+  text-transform: uppercase
+  line-height: 66px
+  color: #353458
+  font-family: proxima, sans-serif
+  font-weight: normal
+  letter-spacing: 3px
+
+.cashout
+  > div.is-disabled
+    box-shadow: inset 0 0 0 2px #f6f6f6
+    background: white
+    color: #b3b3bc
+    opacity: 0.4
+    > div
+      color: #b3b3bc
+  .cashaccount
+    width: 420px
+  .selectbank
+    width: 277px
+    margin-right: 10px
+    float: left
+  .halcash
+    width: 276px
+    float: left
+  .selectbank, .cash
+    position: relative
+  .selectbank:before, .cash:before
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    content: " "
+    box-shadow: 0 0 2px rgba(53, 53, 88, 0.3)
+
+.halcash
+  height: 66px
+  line-height: 66px
+  box-shadow: inset 0 0 0 2px #95c4d1
+  cursor: pointer
+  background: white
+  position: relative
+  border-radius: 2px
+  font-size: 17px
+  +f(m)
+  font-weight: normal
+  color: #353458
+  text-indent: 140px
+  &:before
+    background: url(/assets/Flag_of_Poland_bordered_1.png) no-repeat 0 0
+    background-position: 80px
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    content: "ATM"
+    box-shadow: 0 0 2px rgba(53, 53, 88, 0.3)
+  &:hover, &.is-active
+    box-shadow: inset 0 0 0 4px #1ebebb
+    background: #f2fcfb
+
+.selectbank
+  height: 66px
+  line-height: 66px
+  box-shadow: inset 0 0 0 2px #95c4d1
+  cursor: pointer
+  background: white
+  position: relative
+  border-radius: 2px
+  &:hover, &.is-active
+    box-shadow: inset 0 0 0 4px #1ebebb
+    background: #f2fcfb
+  .selectbank__title
+    overflow: hidden
+    -ms-text-overflow: ellipsis
+    text-overflow: ellipsis
+    font-size: 17px
+  .selectbank__value
+    font-size: 21px
+    +f(m)
+    font-weight: normal
+    color: #353458
+    position: relative
+    z-index: 4
+    .selectbank__addvalue
+      letter-spacing: 2px
+      color: #353458
+      text-transform: uppercase
+      font-size: 15px
+      text-align: center
+      .icon-add
+        font-size: 20px
+        display: inline-block
+        vertical-align: middle
+        color: #93c4d2
+        margin-right: 6px
+        position: relative
+        top: 2px
+    .selectbank__currency
+      position: absolute
+      right: 0
+      top: 0
+      text-transform: uppercase
+      color: #1ebebb
+    i
+      position: absolute
+      right: 15px
+      top: 24px
+      line-height: 1
+      font-size: 15px
+  .selectbank__valuewrap
+    margin: 0 46px 0 28px
+    display: block
+    position: relative
+  .selectbank__drop
+    display: none
+    ul
+      list-style: none
+      li
+        position: relative
+        font-size: 21px
+        +f(m)
+        font-weight: normal
+        color: #353458
+        border-top: 1px solid #e6eef2
+        padding: 10px 0
+        padding-left: 28px
+        &:hover
+          background: #fafafa
+      .selectbank__currency
+        position: absolute
+        right: 46px
+        top: 10px
+        text-transform: uppercase
+        color: #1ebebb
+  &.is-open .selectbank__drop
+    display: block
+    background: white
+    line-height: 1
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    padding-top: 66px
+    z-index: 3
+    border: 2px solid #353557
+    border-radius: 2px
+
+.cashaccount
+  float: right
+  width: 205px
+  box-shadow: inset 0 0 0 2px #95c4d1
+  border-radius: 2px
+  height: 66px
+  line-height: 66px
+  text-align: center
+  background: white
+  cursor: pointer
+  position: relative
+  &.is-left
+    float: left
+  &.is-disabled
+    box-shadow: inset 0 0 0 2px #e6eef2
+    .cashaccount__value h3
+      -webkit-filter: grayscale(100%)
+      -webkit-backface-visibility: hidden
+      filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)
+      -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)"
+      opacity: 0.4
+  .cashaccount__money
+    font-size: 13px
+    +f(demi-b)
+    font-weight: normal
+    color: #353458
+    span
+      color: #00bfbc
+  .cashaccount__drop
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    padding-top: 66px
+    background: white
+    z-index: 3
+    border: 2px solid #353556
+    border-radius: 2px
+    display: none
+    ul
+      list-style: none
+      li
+        border-bottom: 1px solid #e6eef2
+        cursor: pointer
+        padding-left: 25px
+        position: relative
+        text-align: left
+        font-size: 15px
+        height: 43px
+        line-height: 43px
+        +f(demi-b)
+        font-weight: normal
+        color: #353458
+        span
+          position: absolute
+          right: 25px
+          color: #00bfbc
+        &:hover
+          background: #f9f9f9
+        &:last-child
+          border: none
+  .cashaccount__value
+    position: relative
+    z-index: 10
+    h3
+      font-weight: normal
+      text-align: center
+      font-size: 12px
+      text-transform: uppercase
+      letter-spacing: 2px
+      color: #353556
+      margin-bottom: 0
+      +f(m)
+      font-weight: normal
+      i
+        margin-left: 4px
+        margin-right: 0
+        &.icon-cube_logo_dark
+          background: url(../img/media/cubits.svg) no-repeat 0 0
+          background-size: 26px 26px 100%
+          width: 26px
+          height: 26px
+          display: inline-block
+          background-size: contain
+          display: inline-block
+          vertical-align: middle
+          margin-right: 10px
+  &.is-filled
+    .cashaccount__value
+      line-height: 45px
+      .icon-arrowdown
+        position: relative
+        top: 7px
+    .cashaccount__money
+      line-height: 15px
+      position: relative
+      top: -10px
+  &.is-drop .cashaccount__drop
+    display: block
+
+.cash
+  margin-right: 10px
+  font-weight: normal
+  text-align: center
+  font-size: 16px
+  text-transform: uppercase
+  letter-spacing: 2px
+  color: #353458
+  margin-bottom: 0
+  +f(r)
+  font-weight: normal
+  float: right
+  width: 277px
+  box-shadow: inset 0 0 0 2px #95c4d1
+  height: 66px
+  line-height: 66px
+  text-align: center
+  background: white
+  cursor: pointer
+  float: left
+  border-radius: 2px
+  &.is-active, &:hover
+    box-shadow: inset 0 0 0 4px #1ebebb
+    background: #f2fcfb
+  i
+    margin-left: 4px
+    margin-right: 0
+    &.icon-cube_logo_dark
+      background: url(../img/media/cubits.svg) no-repeat 0 0
+      background-size: 26px 26px 100%
+      width: 26px
+      height: 26px
+      display: inline-block
+      background-size: contain
+      display: inline-block
+      vertical-align: middle
+      margin-right: 10px
+
+.confirm
+  *zoom: 1
+  &:after
+    content: " "
+    display: table
+    clear: both
+  .confirm__button
+    float: right
+    width: 205px
+    height: 205px
+    line-height: 205px
+    background: #1ebebb
+    font-size: 20px
+    letter-spacing: 3px
+    text-align: center
+    font-family: bold, sans-serif
+    font-weight: normal
+    color: white
+    text-transform: uppercase
+    text-decoration: none
+    cursor: pointer
+    box-shadow: inset 0 0 0 3px #27e5e1
+    -webkit-transition: all 0.1s ease
+    transition: all 0.1s ease
+    &.is-small
+      height: 156px
+      line-height: 156px
+    &:hover
+      background: #179290
+    &:active
+      position: relative
+      top: 2px
+    &.is-disabled
+      background: #95c4d1
+      box-shadow: inset 0 0 0 3px #a2d6e4
+      &:hover, &:active
+        background: #95c4d1
+        box-shadow: inset 0 0 0 3px #a2d6e4
+  .confirm__amount
+    float: left
+    width: 635px
+
+.table
+  width: 100%
+  border-spacing: 0
+  border-collapse: collapse
+  border-radius: 2px
+  td, th
+    height: 49px
+    vertical-align: middle
+    padding: 0 24px
+    background: white
+  td:first-child, th:first-child
+    border-left: 2px solid #e6eef2
+  td:last-child, th:last-child
+    border-right: 2px solid #e6eef2
+  thead
+    td, th
+      text-align: left
+      font-weight: bold
+      border-top: 2px solid #e6eef2
+      border-bottom: 2px solid #e6eef2
+      +f(demi-b)
+      font-weight: normal
+  tfoot
+    td, th
+      text-align: left
+      font-weight: bold
+      border-top: 2px solid #e6eef2
+      border-bottom: 2px solid #e6eef2
+      +f(demi-b)
+      font-weight: normal
+  thead
+    td:first-child, th:first-child
+      border-left: 2px solid #e6eef2
+  tfoot
+    td:first-child, th:first-child
+      border-left: 2px solid #e6eef2
+  thead
+    td:last-child, th:last-child
+      border-right: 2px solid #e6eef2
+  tfoot
+    td:last-child, th:last-child
+      border-right: 2px solid #e6eef2
+  thead
+    td.table__amount, th.table__amount
+      font-family: "Source Code Pro", sans-serif
+      font-weight: 700
+  tfoot
+    td.table__amount, th.table__amount
+      font-family: "Source Code Pro", sans-serif
+      font-weight: 700
+  thead
+    td, th
+      border-bottom-width: 3px
+  tfoot
+    td, th
+      background: #e6eef2
+  .table__text
+    color: #353458
+    font-size: 17px
+    +f(demi-b)
+  .table__amount
+    font-family: "Source Code Pro", sans-serif
+    font-weight: 400
+    text-align: right
+    font-size: 17px
+    color: #0e2354
+  .table__currency
+    color: #00c7c4
+
+.confirm__amount .table tbody td
+  +f(r)
+  font-weight: normal
+
+.table.table_confirm
+  border: none
+  td, th
+    border: none
+    background: white
+  thead
+    td, th
+      border: none
+      border-bottom: 3px solid #e6eef2
+  tfoot
+    td, th
+      padding-top: 20px
+      border: none
+      background: none
+  .table__status td
+    height: 10px
+    padding: 0
+    background: white
+    height: 10px
+    text-align: right
+    .table__counter
+      display: block
+      position: relative
+      height: 10px
+      width: 100%
+      &.is-done
+        background: #e6eef2
+      i
+        background: #00c7c4
+        position: absolute
+        right: 0
+        height: 10px
+
+.confirmation
+  width: 450px
+  margin: 0 auto
+  background: #f9fcfd
+  margin-top: 25px
+  padding: 30px 30px 47px 30px
+  box-shadow: inset -3px -3px 0 #eaeaea
+  .confirmation__wrap
+    position: relative
+  .confirmation__timeleft
+    text-align: right
+    width: 100px
+    top: -20px
+    position: absolute
+    right: 0
+    font-size: 13px
+    font-family: aital, sans-serif
+    font-weight: normal
+    color: #abacba
+    i
+      color: #b8bac5
+      margin-right: 4px
+      position: relative
+      top: 2px
+  .confirmation__go
+    background: white
+    box-shadow: inset 3px 3px 0 #ebebeb
+    margin-top: 30px
+    .confirmation__goin
+      text-align: center
+      padding: 24px 30px
+      &.confirmation__goin_alt
+        padding: 50px 0
+    .confirmation__icon
+      font-size: 110px
+      color: #00c7c4
+      line-height: 1
+    h3
+      font-weight: normal
+      +f(demi-b)
+      font-weight: normal
+      font-style: italic
+      color: #00c7c4
+      font-size: 19px
+      margin-bottom: 10px
+    p
+      +f(r)
+      font-weight: normal
+      font-size: 15px
+      color: #353458
+      strong
+        font-weight: normal
+        font-family: abold, sans-serif
+        font-weight: normal
+        margin-right: 4px
+        span
+          color: #00c3c0
+  .confirmation__send
+    text-align: center
+    width: 260px
+    display: inline-block
+    vertical-align: middle
+    label
+      display: block
+      text-align: center
+      font-size: 15px
+      margin-bottom: 10px
+      +f(r)
+      font-weight: normal
+      color: #353458
+      strong
+        font-weight: normal
+        +f(demi-b)
+        font-weight: normal
+    input
+      border: 2px solid #95c4d1
+      width: 100%
+      text-align: center
+      padding: 10px
+      font-size: 12px
+      +f(demi-b)
+      font-weight: normal
+      color: #353458
+      box-sizing: border-box
+      background: #fafcfd
+  .confirmation__qr
+    display: inline-block
+    vertical-align: middle
+    margin-left: 17px
+
+.overlay
+  position: absolute
+  top: 70px
+  background: rgba(230, 238, 242, 0.7)
+  bottom: 0
+  right: 0
+  left: 0
+  z-index: 1000
+  display: none
+
+.has-popup
+  overflow: hidden
+
+.popup
+  display: none 
+  // left: 50%
+  // z-index: 1001
+  // position: absolute
+  // background: white
+  // -webkit-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955)
+  // transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955)
+  // -webkit-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
+  // -webkit-transition-delay: 200ms
+  // -webkit-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 200ms
+  // transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 200ms
+  // -ms-transform: scale(0.02)
+  // -webkit-transform: scale(0.02)
+  // transform: scale(0.02)
+  // width: 850px
+  // margin-left: -425px
+  // top: 96px
+  // z-index: -1
+  // opacity: 0 
+  &.popup_nospace
+    background: #f9fcfd
+    .popup__content
+      padding: 0
+      padding-top: 20px
+  &.is-shown
+    -ms-transform: scale(1)
+    -webkit-transform: scale(1)
+    transform: scale(1)
+    display: block
+    z-index: 10000
+    opacity: 1  
+  &.popup_narrow
+    width: 500px
+    margin-left: -250px
+  &.popup_narrow1
+    width: 600px
+    margin-left: -300px
+    &#popup-activity, &.popup-verify
+      top: 200px 
+  &.popup_narrow2
+    width: 700px
+    margin-left: -350px
+  &.popup_invoice
+    width: 700px
+    margin-left: -350px 
+    background: #f9fcfd
+
+  &.popup_center
+    top: 50%
+    margin-top: -100px
+.popup__subtitle
+  text-transform: uppercase
+  margin-bottom: 50px
+  &.popup__subtitle_normagin
+    margin-bottom: 10px
+
+.popup__subsubtitle
+  font-family: semi, sans-serif
+  font-weight: normal
+  font-size: 18px
+  color: #353557
+  text-align: center
+
+.popup_type1, .popup_type2
+  background: #f9f9f9
+  border-radius: 4px
+
+.popup_type1 .popup__inside, .popup_type2 .popup__inside
+  padding: 0 88px 0 88px
+
+.popup_type1 .pfield__label
+  text-align: left
+
+.popup_type2
+  width: 400px
+  margin-left: -200px
+  .pfield__label
+    text-align: left
+  .popup__inside
+    padding: 20px
+  .pfield.pfield_small
+    width: auto
+
+.popup__message, .popup__box
+  padding: 66px 30px 30px 30px
+  background: #f9fcfd
+  border: 1px solid #b8b7c2
+  text-align: center
+  font-size: 18px
+  color: #353557
+  line-height: 1.4
+  margin-bottom: 30px
+
+.popup__message p, .popup__box p
+  margin-bottom: 30px
+
+.popup__message i
+  color: #69dddd
+  font-size: 30px
+
+.popup__box
+  i
+    color: #69dddd
+    font-size: 30px
+  border-radius: 4px
+  width: 380px
+  margin-left: auto
+  margin-right: auto
+  padding-top: 20px
+  padding-bottom: 20px
+  *zoom: 1
+  &:after
+    content: " "
+    display: table
+    clear: both
+  .popup__boxhead
+    text-transform: uppercase
+    margin-bottom: 20px
+    font-size: 18px
+    font-weight: 400
+    color: #343656
+    text-align: center
+  &.popup__box_wide
+    width: auto
+    margin-left: -88px
+    margin-right: -88px
+    .callback__header
+      +f(demi-b)
+      margin-top: 10px
+      width: 300px
+    .callback__description
+      +f(demi-b)
+      font-size: 13px
+      width: 300px
+      text-align: center
+  .popup__boxcol
+    width: 380px
+    float: left
+    + .popup__boxcol
+      float: right
+  &.popup__box_noborder
+    border: none
+    background: transparent
+    margin-bottom: 20px
+    padding-bottom: 0
+    padding-left: 15px
+    padding-right: 15px
+    .pfield.pfield_small
+      width: 380px
+      .pfield__content
+        width: 260px
+
+.popup__content
+  padding: 20px 50px 20px 50px
+  +f(r)
+  font-weight: normal
+  font-size: 14px
+  color: #353458
+  padding: 0
+
+.tabs__content
+  display: none
+
+.pfield_title
+  min-height: 32px
+  font-family: bold, sans-serif
+  font-weight: normal
+
+.pfield__value
+  text-align: left
+  font-size: 14px
+  padding-top: 13px
+  color: #343656
+
+.fancybox-wrap h3, .popup h3
+  letter-spacing: 3px
+  font-weight: normal
+  text-transform: uppercase
+  text-align: center
+  font-size: 15px
+  +f(r)
+  font-weight: normal
+  margin-bottom: 27px
+
+.fancybox-wrap .popup__title, .popup .popup__title
+  +f(r)
+  font-weight: normal
+  font-size: 18px
+  color: #353458
+  text-align: center
+  text-transform: uppercase
+  font-weight: normal
+  margin-bottom: 20px
+  letter-spacing: 3px
+
+.fancybox-wrap .popup__title span, .popup .popup__title span
+  display: block
+  font-size: 13px
+  text-align: center
+  +f(r)
+  font-weight: normal
+  color: #a1a2af
+  text-transform: none
+  letter-spacing: 0
+
+.fancybox-wrap .popup__title i, .popup .popup__title i
+  vertical-align: middle
+  margin-right: 15px
+  position: relative
+  top: -2px
+
+.fancybox-wrap .popup__subtitle, .popup .popup__subtitle
+  text-align: center
+
+.fancybox-wrap .popup__close, .popup .popup__close
+  position: absolute
+  right: 20px
+  top: 20px
+  font-size: 19px
+  color: #93c4d2
+  cursor: pointer
+  +f(m)
+  font-weight: normal
+
+.qrcode
+  border: 2px solid #93c4d2
+  height: 56px
+  line-height: 56px
+  text-align: center
+  margin: 14px 0
+  font-size: 17px
+  +f(demi-b)
+  font-weight: normal
+  color: #353558
+
+.qrpic
+  margin-bottom: 20px
+
+.field
+  margin-bottom: 23px
+  position: relative
+  *zoom: 1
+  &:after
+    content: " "
+    display: table
+    clear: both
+  label
+    float: left
+    width: 104px
+    padding-left: 16px
+    font-size: 17px
+    +f(m)
+    font-weight: normal
+    color: #34495e
+    padding-top: 13px
+  .input-buy
+    float: right
+    width: 410px
+    margin-bottom: 0
+  &.field_small
+    .input-buy
+      width: 280px
+    .smallselect
+      background: white
+      width: 280px
+    label
+      font-size: 14px
+      width: auto
+      padding-top: 15px
+  &.field_smaller
+    margin-bottom: 15px
+    .field__content
+      float: right
+      width: 290px
+    label
+      font-size: 14px
+      padding-top: 15px
+    .input-buy
+      width: 100%
+  &.field_check
+    margin: 20px 0
+    padding-left: 110px
+    cursor: pointer
+    .checkbox
+      display: inline-block
+      vertical-align: middle
+      margin-right: 11px
+      input
+        display: none
+      i
+        display: inline-block
+        width: 20px
+        height: 20px
+        background: #00bfbc
+        box-shadow: inset 0 0 0 2px #bccdd5
+      input:checked + i
+        background: #bccdd5
+    .label
+      display: inline-block
+      +f(r)
+      font-weight: normal
+      font-size: 13px
+      color: #353458
+  .smallselect
+    float: right
+    width: 290px
+    height: 46px
+    line-height: 46px
+    .smallselect__value
+      padding-left: 20px
+      +f(m)
+      font-weight: normal
+      font-size: 17px
+
+.addbank
+  .addbank__content
+    padding: 0px 41px 0 27px
+    .field
+      padding-bottom: 15px
+      margin-bottom: 0
+      label
+        font-size: 14px
+        +f(m)
+        font-weight: normal
+  .addbank__title
+    font-size: 19px
+    color: #353458
+    +f(demi-b)
+    font-weight: normal
+    margin-bottom: 27px
+  &.addbank_withdraw
+    width: 400px
+    margin: 0 auto
+    .addbank__content
+      padding: 0
+    .field
+      label
+        padding-left: 0
+        width: 100px
+      .input-buy
+        width: 290px
+
+.withdraw__in, .somerandomblockthatlookslikealotofotherblocksbutnotquite__in
+  width: 400px
+  margin: 0 auto
+  margin-bottom: 24px
+
+.withdraw__in .withdraw__title, .somerandomblockthatlookslikealotofotherblocksbutnotquite__in .withdraw__title
+  margin-bottom: 10px
+  margin-top: 20px
+
+.withdraw__in .withdraw__title strong, .somerandomblockthatlookslikealotofotherblocksbutnotquite__in .withdraw__title strong
+  font-weight: normal
+  +f(demi-b)
+  font-weight: normal
+
+.invoice
+  .invoice__text
+    margin: 20px 0
+    font-size: 15px
+    text-align: center
+    color: #353458
+    +f(r)
+    font-weight: normal
+    strong
+      font-weight: normal
+      font-family: abold, sans-serif
+      font-weight: normal
+      color: #1ebebb
+    em
+      font-style: normal
+      +f(demi-b)
+      font-weight: normal
+      color: #353458
+  .invoice__note
+    font-size: 15px
+    +f(r)
+    font-weight: normal
+    color: #353458
+    margin-top: 15px
+    h3
+      font-size: 15px
+      text-align: left
+      letter-spacing: 0
+      text-transform: none
+      +f(demi-b)
+      font-weight: normal
+      color: #ed1847
+      margin-bottom: 8px
+  .invoice__data
+    th, td
+      border-bottom: 1px solid #f9fcfd
+      padding: 15px 10px 15px 20px
+    th
+      text-align: left
+      font-weight: normal
+      background: white
+      font-size: 16px
+      +f(r)
+      font-weight: normal
+      color: #353458
+    td
+      +f(demi-b)
+      font-weight: normal
+      font-size: 16px
+      color: #353458
+      background: #e6eef2
+      em
+        font-style: normal
+        color: #ea294c
+
+.verify
+  min-height: 220px
+  text-align: center
+  font-size: 15px
+  +f(r)
+  font-weight: normal
+  color: #353458
+  p
+    margin-bottom: 2em
+    strong
+      font-weight: normal
+      +f(demi-b)
+      font-weight: normal
+    &.verify__pic
+      margin: 35px 0
+  .verify__ok
+    font-size: 125px
+    line-height: 1
+    color: #00c7c4
+  .verify__field
+    width: 415px
+    margin: 0 auto 12px auto
+    *zoom: 1
+    &:after
+      content: " "
+      display: table
+      clear: both
+    label
+      width: 110px
+      text-align: left
+      float: left
+      +f(demi-b)
+      font-weight: normal
+      font-size: 14px
+      color: #353458
+      padding-top: 15px
+    .verify__input
+      float: right
+      width: 290px
+      position: relative
+      .smallselect
+        width: 100%
+      .verify__phone
+        height: 50px
+        box-sizing: border-box
+        padding: 0px 10px 0 10px
+        line-height: 1
+        width: 239px
+        border: 2px solid #95c4d1
+        border-radius: 3px
+        float: right
+        font-size: 17px
+        border-top-left-radius: 0
+        border-bottom-left-radius: 0
+        +f(demi-b)
+        font-weight: normal
+        &:-ms-input-placeholder, &:-moz-placeholder, &::-moz-placeholder
+          color: #d3d3d9
+        &::-webkit-input-placeholder
+          color: #d3d3d9
+          color: #d3d3d9
+        &::-moz-placeholder, &:-ms-input-placeholder, &::placeholder
+          color: #d3d3d9
+      .verify__phonecode
+        position: absolute
+        left: 0
+        top: 0
+        bottom: 0
+        height: 50px
+        line-height: 50px
+        +f(demi-b)
+        font-weight: normal
+        font-size: 17px
+        color: #f9fcfd
+        width: 52px
+        background: #95c4d1
+        border-radius: 3px
+        border-top-right-radius: 0
+        border-bottom-right-radius: 0
+
+.popup__inside
+  .errormess
+    text-align: center
+    font-size: 13px
+    +f(demi-b)
+    font-weight: normal
+    margin-bottom: 14px
+    color: #ea294c
+  .input-buy.is-error input
+    border-color: #ea294c
+  .popup__in
+    width: 340px
+    margin: 0 auto
+    padding: 50px 0
+    p
+      margin-bottom: 1em
+      font-size: 15px
+      +f(r)
+      font-weight: normal
+      color: #353458
+  .rememberme
+    width: 340px
+    margin: 0 auto
+    text-align: left
+    margin-bottom: 20px
+    *zoom: 1
+    &:after
+      content: " "
+      display: table
+      clear: both
+    .field
+      padding-left: 0
+      float: left
+      width: 50%
+      margin: 0
+    .forgotpassword
+      float: right
+      +f(demi-b)
+      font-weight: normal
+      padding-top: 3px
+      a
+        text-decoration: none
+        color: #00bfbc
+        font-size: 13px
+  .donthave
+    background: white
+    text-align: center
+    padding: 20px 0
+    border-top: 1px solid #ebeff7
+    font-size: 13px
+    +f(r)
+    font-weight: normal
+    a
+      text-decoration: none
+      +f(demi-b)
+      font-weight: normal
+      color: #00bfbc
+
+.popup__bottom
+  background: white
+  border-top: 1px solid #e6edf2
+  padding: 15px 20px
+  +f(r)
+  font-weight: normal
+  font-size: 13px
+  text-align: center
+  a
+    color: #1ebebb
+    text-decoration: none
+    +f(demi-b)
+    font-weight: normal
+  span
+    display: block
+    font-size: 15px
+    margin-bottom: 5px
+    strong
+      font-weight: normal
+      +f(demi-b)
+      font-weight: normal
+      color: #00bfbc
+
+.twofactor
+  text-align: center
+  width: 450px
+  margin: 0 auto
+  .popup__qr
+    margin: 20px 0
+  p
+    text-align: left
+
+.fileupload
+  margin: 25px auto
+  label
+    font-size: 15px
+    +f(demi-b)
+    font-weight: normal
+    color: #353458
+    display: block
+    margin-bottom: 7px
+  .fileupload__button
+    display: block
+    text-decoration: none
+    background: #95c4d1
+    color: white
+    box-shadow: inset 0 0 0 2px #9ccedb
+    border-radius: 2px
+    height: 50px
+    text-align: center
+    font-size: 17px
+    +f(demi-b)
+    font-weight: normal
+    cursor: pointer
+    line-height: 50px
+  .input-buy
+    width: auto
+    input
+      background: #f2f5f9
+
+.congr
+  text-align: center
+  p
+    +f(r)
+    font-weight: normal
+    font-size: 15px
+    color: #353458
+    margin-bottom: 2em
+  i
+    font-size: 100px
+    text-align: center
+    color: #00c7c4
+
+.bp
+  width: 420px
+  margin: 0 auto
+  padding-bottom: 15px
+  .required
+    text-align: center
+    margin-bottom: 20px
+    color: #353458
+    font-size: 15px
+    +f(demi-b)
+    font-weight: normal
+  .input-buy_short
+    display: inline-block
+    width: 142px !important
+    margin-left: 6px
+    margin-top: 10px
+    &:last-child
+      margin-left: 0
+
+.po
+  padding: 25px
+  .po__descr
+    text-align: center
+    font-size: 17px
+    margin-bottom: 25px
+  .po__table
+    width: 100%
+    thead
+      td
+        font-size: 17px !important
+        +f(r)
+        font-weight: normal
+        color: #353458
+        font-weight: normal
+        text-align: left
+      th
+        font-size: 17px !important
+        +f(b)
+        font-weight: normal
+        color: #353458
+        font-weight: normal
+        text-align: left
+        color: white
+        font-size: 21px
+        font-weight: normal
+    td
+      border-right: 2px solid white
+      text-align: left
+      font-weight: normal
+      border-bottom: 2px solid white
+      background: #e6eef2
+      padding: 15px
+      vertical-align: middle
+    th
+      text-align: left
+      font-weight: normal
+      border-bottom: 2px solid white
+      background: #e6eef2
+      padding: 15px
+      vertical-align: middle
+      background: #1ebebb
+      font-size: 21px
+      +f(b)
+      font-weight: normal
+      color: white
+      text-align: center
+    .po__provider
+      font-size: 25px
+      text-align: center
+      line-height: 1
+      .icon-secure_trading
+        background: url(../img/media/visamaster-color.png) no-repeat 0 0
+        -webkit-background-size: contain
+        -o-background-size: contain
+        display: inline-block
+        background-size: contain
+        width: 100px
+        height: 30px
+      .icon-dotpay
+        background: url(../img/media/dotpay-color.svg) no-repeat 0 0
+        background-size: 100px 25px 100%
+        width: 100px
+        height: 25px
+        display: inline-block
+        -webkit-background-size: contain
+        -o-background-size: contain
+        display: inline-block
+        background-size: contain
+        margin: 5px 0 0 20px
+      i
+        font-size: 20px
+      strong
+        +f(demi-b)
+        font-weight: normal
+        font-size: 17px
+      .cashaccountprovider
+        font-size: 13px
+        white-space: nowrap
+        vertical-align: middle
+        i
+          background: url(../img/media/cubits.svg) no-repeat 0 0
+          background-size: 18px 18px 100%
+          width: 18px
+          height: 18px
+          display: inline-block
+          background-size: contain
+          margin-right: 6px
+          vertical-align: middle
+    .po__description
+      font-size: 13px
+      color: #353458
+      line-height: 1.4
+      strong
+        font-weight: normal
+        +f(demi-b)
+        font-weight: normal
+        overflow: hidden
+        display: block
+      span
+        float: left
+        white-space: nowrap
+        margin-right: 5px
+    .po__fee
+      font-size: 16px
+      color: #353458
+      +f(demi-b)
+      font-weight: normal
+      text-align: center
+      &.is-red
+        color: #ed1847
+    .po__duration
+      font-size: 16px
+      color: #353458
+      +f(demi-b)
+      font-weight: normal
+      text-align: center
+
+.helpmeplease
+  .helpmeplease__button1, .helpmeplease__button2
+    float: left
+    margin-bottom: 40px
+    width: 40%
+    margin-left: 7%
+    margin-top: 20px
+  .helpmeplease__bottom
+    border-top: 1px solid #e6edf2
+    text-align: center
+    padding: 40px 0
+    clear: both
+    strong
+      font-weight: normal
+      +f(demi-b)
+      font-weight: normal
+    span
+      color: #1ebebb
+    a
+      color: #1ebebb
+      text-decoration: none
+
+.scrolltext
+  white-space: pre-wrap
+  white-space: -moz-pre-wrap
+  white-space: -pre-wrap
+  white-space: -o-pre-wrap
+  word-wrap: break-word
+  overflow: auto
+  background: #f2f6f8
+  height: 236px
+  width: 500px
+  margin: 0 auto 20px auto
+  font-size: 13px
+  line-height: 1.2
+  border: 1px solid #95c4d1
+  border-radius: 3px
+  +f(m)
+  font-weight: normal
+  color: #353458
+  box-shadow: inset 3px 3px 0 #eaeaea
+  .scrolltext__content
+    padding: 15px
+
+.halcash_get_phone
+  padding-bottom: 2em
+  p
+    text-align: center
+    margin: 0 4em 2em 4em
+    strong
+      font-weight: normal
+      +f(demi-b)
+      font-weight: normal
+  #phone_number_error
+    color: red
+    font-size: 11px
+    margin-top: 5px
+
+.phoneverify
+  padding-bottom: 2em
+  p
+    text-align: center
+    margin: 0 4em 2em 4em
+    strong
+      font-weight: normal
+      +f(demi-b)
+      font-weight: normal
+
+.twobuttons
+  *zoom: 1
+  &:after
+    content: " "
+    display: table
+    clear: both
+  .submit
+    float: right
+    width: 50%
+  .cancel
+    float: right
+    width: 50%
+    float: left
+    width: 50%
+    background: white !important
+    color: #95c4d1 !important
+    box-shadow: inset 0 0 0 3px #95c4d1 !important
+    border-color: #95c4d1 !important
+    &:hover
+      background: white
+
+.icon_big
+  font-size: 130px
+  text-align: center
+  color: #179290
+  line-height: 100px
+  .icon-ok
+    color: #27e5e1
+
+
+.message
+  margin-bottom: 30px
+  p
+    margin-bottom: 20px
+  strong
+    font-weight: normal
+    +f(demi-b)
+    font-weight: normal
+  &.message_sep
+    background: white
+    margin: 25px 0
+    .message__title
+      font-family: proxima, sans-serif
+      font-weight: normal
+      font-size: 18px
+      color: #353458
+      text-align: center
+      text-transform: uppercase
+      font-weight: normal
+      padding-top: 25px
+      letter-spacing: 3px
+      margin: 0px 0 25px 0
+    .icon_big
+      margin-bottom: 30px
+
+
+.center
+  text-align: center
+
+
+.iconmessage
+  text-align: center
+  margin: 50px 0
+  font-size: 16px
+  strong
+    font-weight: normal
+    +f(demi-b)
+    font-weight: normal
+  i
+    font-size: 30px
+    vertical-align: middle
+    position: relative
+    top: 4px
+    margin-right: 10px
+
+.jumio
+  height: 50px
+  background: url(/assets/idnow-logo.png) no-repeat 0 0
+  background-position: center
+  margin-bottom: 14px
+
+.smallicon
+  text-align: center
+  font-size: 14px
+  color: #00bfbc
+  i
+    font-size: 25px
+    margin-right: 8px
+    vertical-align: middle
+    
+.icon-sofort-color
+  background: url(../img/media/sofort-color.png) no-repeat 0 0
+  width: 62px
+  height: 25px
+  margin-top: 15px
+  margin-left: 35px
+  background-size: contain
+  display: inline-block
+  
+.icon-skrill-color
+  background: url(../img/media/obt-color.png) no-repeat 0 0
+  width: 62px
+  height: 25px
+  margin-top: 20px
+  margin-left: 45px
+  background-size: contain
+  display: inline-block
+
+.icon-sepa:before
+  content: "\e91b"
+  display: block
+  line-height: 3.5
+  font-size: 20px 
+.icon-question:before
+  content: "5"
+
+.icon-okpay-color
+  background: url(../img/media/okpay-color.png) no-repeat 0 0
+  width: 62px
+  height: 25px
+  margin-top: 15px
+  margin-left: 35px
+  background-size: contain
+  display: inline-block
+  

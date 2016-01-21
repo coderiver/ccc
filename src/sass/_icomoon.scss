@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot?wcpc3w');
+  src:url('../fonts/icomoon.eot?wcpc3w#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?wcpc3w') format('truetype'),
+    url('../fonts/icomoon.woff?wcpc3w') format('woff'),
+    url('../fonts/icomoon.svg?wcpc3w#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+// .icon {
+//   font-family: 'icons';
+//   speak: none;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-variant: normal;
+//   text-transform: none;
+//   line-height: 1;
+
+//   /* Better Font Rendering =========== */
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+
+$icon-next: "\e915";
+$icon-prev: "\e919";
+$icon-arrow-down: "\e900";
+$icon-arrow-up: "\e901";
+$icon-moneybox: "\e914";
+$icon-people: "\e917";
+$icon-cart: "\e905";
+$icon-crowdfunding: "\e908";
+$icon-gamepad: "\e90b";
+$icon-graph: "\e90e";
+$icon-plane: "\e918";
+$icon-btc-galaxy: "\e904";
+$icon-close: "\e906";
+$icon-in: "\e911";
+$icon-berlin: "\e902";
+$icon-earth: "\e909";
+$icon-london: "\e912";
+$icon-luxemburg: "\e913";
+$icon-gears: "\e90c";
+$icon-heart-bitcoin: "\e90f";
+$icon-safe: "\e91a";
+$icon-fb: "\e90a";
+$icon-gplus: "\e90d";
+$icon-tw: "\e920";
+$icon-slider-arr: "\e91d";
+$icon-okpay: "\e916";
+$icon-sepa: "\e91b";
+$icon-skrill: "\e91c";
+$icon-sofort: "\e91e";
+$icon-swift: "\e91f"; 
+$icon-bit: "\e903";
+$icon-comp-id: "\e907";
+$icon-help: "\e910";
+$icon-wallet: "\e921";
+
+
+.icon-arrow-down:before {
+  content: "\e900";
+}
+.icon-arrow-up:before {
+  content: "\e901";
+}
+.icon-berlin:before {
+  content: "\e902";
+}
+.icon-bit:before {
+  content: "\e903";
+}
+.icon-btc-galaxy:before {
+  content: "\e904";
+}
+.icon-cart:before {
+  content: "\e905";
+}
+.icon-close:before {
+  content: "\e906";
+}
+.icon-comp-id:before {
+  content: "\e907";
+}
+.icon-crowdfunding:before {
+  content: "\e908";
+}
+.icon-earth:before {
+  content: "\e909";
+}
+.icon-fb:before {
+  content: "\e90a";
+}
+.icon-gamepad:before {
+  content: "\e90b";
+}
+.icon-gears:before {
+  content: "\e90c";
+}
+.icon-gplus:before {
+  content: "\e90d";
+}
+.icon-graph:before {
+  content: "\e90e";
+}
+.icon-heart-bitcoin:before {
+  content: "\e90f";
+}
+.icon-help:before {
+  content: "\e910";
+}
+.icon-in:before {
+  content: "\e911";
+}
+.icon-london:before {
+  content: "\e912";
+}
+.icon-luxemburg:before {
+  content: "\e913";
+}
+.icon-moneybox:before {
+  content: "\e914";
+}
+.icon-next:before {
+  content: "\e915";
+}
+.icon-okpay:before {
+  content: "\e916";
+}
+.icon-people:before {
+  content: "\e917";
+}
+.icon-plane:before {
+  content: "\e918";
+}
+.icon-prev:before {
+  content: "\e919";
+}
+.icon-safe:before {
+  content: "\e91a";
+}
+.icon-sepa:before {
+  content: "\e91b";
+}
+.icon-skrill:before {
+  content: "\e91c";
+}
+.icon-slider-arr:before {
+  content: "\e91d";
+}
+.icon-sofort:before {
+  content: "\e91e";
+}
+.icon-swift:before {
+  content: "\e91f";
+}
+.icon-tw:before {
+  content: "\e920";
+}
+.icon-wallet:before {
+  content: "\e921";
+}

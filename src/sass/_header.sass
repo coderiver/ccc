@@ -1,0 +1,219 @@
+.header
+  height: 100px
+  line-height: 100px
+  margin-bottom: 70px
+  box-sizing: border-box
+  padding: 0 50px 0 60px
+  color: #FFF
+  background: $darkblue
+  +clr
+.header_buy-btc
+  margin-bottom: 120px 
+
+.header__left
+  float: left
+
+.header__right
+  float: right
+
+.header_transparent
+  background: none
+  position: relative
+  z-index: 1
+  margin-bottom: 0
+  .nav__link
+    &:hover
+      color: $darkblue
+
+
+.header-wrap
+  position: relative
+  height: 514px
+  background: lighten($darkblue, 5%)
+  &:before
+    content: ""
+    position: absolute
+    z-index: 0
+    top: 100px
+    left: 0
+    right: 0
+    bottom: 0
+    background: img-url('header-bg.jpg') no-repeat center center
+    +rmin(1400)
+      background-size: cover
+  .header
+    position: relative
+    z-index: 1
+
+.header-wrap_team
+  &:before
+    background-image: img-url('header-bg-team.jpg')
+
+.header-wrap_careers
+  &:before
+    background-image: img-url('header-bg-careers.jpg')
+
+.header-wrap_press
+  &:before
+    background-image: img-url('header-bg-press.jpg')
+
+.logo
+  display: inline-block
+  vertical-align: middle
+  position: relative
+  top: -1px
+  line-height: 1
+  +hide-text
+  background: img-url('svg/logo.svg') no-repeat center center
+  background-size: contain
+  width: 143px
+  height: 40px
+
+
+.nav
+  font-size: 0
+
+.nav__menu
+  display: inline-block
+  vertical-align: middle
+
+.nav__login
+  display: inline-block
+  vertical-align: middle
+  &:before
+    content: ""
+    display: inline-block
+    vertical-align: middle
+    margin: 0 15px
+    width: 1px
+    height: 50px
+    background: #EFEFEF
+    opacity: 0.5
+
+.nav__list-item
+  display: inline-block
+  vertical-align: middle
+  margin-right: 15px
+  &:last-child
+    margin-right: 0
+
+.nav__link
+  display: inline-block
+  vertical-align: middle
+  position: relative
+  top: 1px
+  +f(m, 13)
+  line-height: 1.5
+  color: inherit
+  text-transform: uppercase
+  text-decoration: none
+  > b, strong
+    +f(b)
+  &:hover
+    color: $lightblue
+  &:active,
+  &.is-active
+    color: $yellow
+
+.lang
+  position: relative
+  top: 7px 
+  display: inline-block
+  padding-left: 20px
+  a
+    text-decoration: none
+  i
+    color: white
+    margin-left: 12px
+    position: relative
+    top: 1px
+    font-size: 12px
+  .lang__link
+    text-decoration: none
+    &:after
+      content: ""
+      position: absolute
+      top: 38px
+      left: 60px 
+      border: 5px solid transparent
+      border-top: 7px solid #fff
+  .lang__link:active
+    color: #3c375e
+    text-decoration: none
+  .lang__drop
+    display: none
+  .lang__drop.is-open-langs
+    display: block
+  
+.footer
+  .lang
+    top: 2px 
+    padding-right: 15px 
+    padding-left: 0
+    a:hover
+      color: #3c375e
+    .lang__link:after
+      content: ""
+      position: absolute
+      top: 5px 
+      left: 36px 
+      border-top: 7px solid #000
+  .lang__list
+    top: 30px 
+    right: -8px 
+     
+
+
+// .lang:hover
+//   background: rgba(255, 255, 255, 0.05)
+
+.lang__list
+  position: absolute
+  top: 70px 
+  right: -28px
+  width: 145px
+  list-style-type: none
+  background: #f5f5f6
+  li
+    position: relative
+    line-height: 20px
+  li:hover
+    background: rgba(0, 0, 0, 0.03)
+  li.is-chosen-lang:before
+    position: absolute
+    content: ""
+    top: 14px
+    left: 10px
+    width: 5px
+    height: 5px
+    -webkit-border-radius: 50%   
+    border-radius: 50%   
+    background: #000
+
+    
+.lang__list 
+  li:first-child
+    margin-top: 15px 
+  li:last-child
+    margin-bottom: 15px 
+  a
+    display: block
+    padding: 0 20px 0 25px
+    color: #3c375e
+    font-size: 18px
+    line-height: 30px
+    font-family: proxima, sans-serif
+    font-weight: bold
+  
+
+.lang__item img
+  display: inline-block
+  vertical-align: middle
+
+.lang__title
+  display: inline-block
+  vertical-align: middle
+  margin-left: 3px
+
+
+

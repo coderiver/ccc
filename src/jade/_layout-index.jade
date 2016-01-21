@@ -1,0 +1,21 @@
+include _mixins
+doctype html
+html.main-page
+  head
+    include _head
+  body
+
+    //BEGIN out
+    .out
+      block header
+        include _header
+
+      block content
+
+      block footer
+        include _footer
+    //END out
+
+    //LOAD SCRIPTS
+    block scripts
+      include _scripts

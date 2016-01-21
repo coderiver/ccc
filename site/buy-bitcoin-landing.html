@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About Us</title>
+    <meta name="viewport" content="width=1040">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" media="all" href="css/screen.css">
+    <!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+  </head>
+  <body>
+    <!--BEGIN out-->
+    <div class="out">
+
+      <!-- BEGIN toparea -->
+      <div class="toparea toparea_buy-btc">
+
+      <!--BEGIN header-->
+        <div class="header header_buy-btc">
+          <div class="header__left"><a href="pages.html" class="logo">Cubits</a></div>
+          <div class="header__right">
+            <nav class="nav">
+              <ul class="nav__menu">
+                <li class="nav__list-item"><a href="about-us.html" class="nav__link">About us</a></li>
+                <li class="nav__list-item"><a href="about-btc.html" class="nav__link">About bitcoin</a></li>
+                <li class="nav__list-item"><a href="security.html" class="nav__link">Security</a></li>
+                <li class="nav__list-item"><a href="merchans.html" class="nav__link">For merchants</a></li>
+              </ul>
+              <ul class="nav__login">
+                <li class="nav__list-item"><a href="#" class="nav__link"><b>Sign up</b></a></li>
+                <li class="nav__list-item"><a href="#" class="nav__link"><b>Login</b></a></li>
+              </ul>
+              <div class="lang">
+                <a href="#" class="lang__link">
+                  <img src="img/gr.png" class="choose-lang" title="lang" alt="lang">
+                </a>
+                <div class="lang__drop">
+                  <ul class="lang__list">
+                    <li class="is-chosen-lang"><a href="#" class="lang__item">
+                      <img src="img/gr.png" title="Your lang" alt="lang">
+                      <span class="lang__title">English</span>
+                    </a></li>
+                    <li><a href="#" class="lang__item">
+                      <img src="img/usa.png" title="Your lang" alt="lang">
+                      <span class="lang__title">English</span>
+                    </a></li>
+                    <li><a href="#" class="lang__item">
+                      <img src="img/pl.png" title="Your lang" alt="lang">
+                      <span class="lang__title">English</span>
+                    </a></li>
+                    <li><a href="#" class="lang__item">
+                      <img src="img/tr.png" title="Your lang" alt="lang">
+                      <span class="lang__title">English</span>
+                    </a></li>
+                  </ul> 
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!--END header-->
+        <div class="toparea__text toparea__text_buy-btc">
+          <div class="b2b-promo">
+            <h1 class="bold-title">Buy Bitcoin with Credit Card  Sofort, 
+              OBT, OKpay, SEPA, SWIFT supported</h1>
+            <h2 class="title title_left"><b>Access the Bitcoin Economy <br>
+              In Three Easy Steps with Cubits.</b></h2>
+            <button type="button" class="btn btn_darkblue btn_large btn_w395">Play with our demo interface</button>
+            <p class="btc-exchange">1 BTC = € 210</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <!-- END toparea -->
+    <!-- begin in -->
+      <div class="l-content is-wide">
+
+        <div class="in js-tabs-group">
+
+          <h2 class="title-buy-btc">Get a real feel of our Buying process<h2>
+          <ul class="tabs js-tabs">
+            <li><a href="#buy">DIRECT BUY</a></li>
+            <li><a href="#buy/bank_tranfer" class="is-active">WITH BANK TRANSFER</a></li>
+          </ul>
+          
+          <!-- BEGIN tab direct_buy -->
+          <div class="tabs__content js-tabs-content" data-id="#buy">
+            <!-- begin exchange  -->
+          <div class="exchange">
+
+            <div class="exchange__col">
+              <label for="">Spend</label>
+              <div class="input-buy js-sender-block" id="sender_block">
+                <div class="input-buy__tilda">~</div>
+                <input type="text" class="js-sender-amount" name="" value="" id="sender_amount" placeholder="0.00" style="border: 4px solid rgb(30, 190, 187);">
+                <div class="error" id="sender_amount_error" style="display:none;"></div>
+                <div class="input-buy__currency input-buy__currency_drop">
+                  <div class="input-buy__currencyvalue">EUR</div>
+                  <i class="icon-next"></i>
+                  <div class="input-buy__currencydrop">
+                    <ul>
+                      <li>AUD</li>
+                      <li>CAD</li>
+                      <li>CHF</li>
+                      <li>CZK</li>
+                      <li>DKK</li>
+                      <li>EUR</li>
+                      <li>GBP</li>
+                      <li>HRK</li>
+                      <li>HUF</li>
+                      <li>JPY</li>
+                      <li>NOK</li>
+                      <li>PLN</li>
+                      <li>RUB</li>
+                      <li>SEK</li>
+                      <li>TRY</li>
+                      <li>USD</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="exchange__col">
+              <label for="">To get</label>
+              <div class="input-buy js-receiver-block is-tilda" id="receiver_block">
+                <div class="input-buy__tilda">~</div>
+                <input type="text" class="js-receiver-amount" name="" value="" id="receiver_amount" placeholder="">
+                <div class="error" id="receiver_amount_error" style="display:none;"></div>
+                <div class="input-buy__currency">BTC</div>
+              </div>
+            </div>
+          </div>
+          <!-- end exchange -->
+          <!-- end in -->
+          <div class="hr"></div>
+          <!-- begin in -->
+          <div class="in">
+
+          <!-- begin paywith -->
+          <div class="paywith">
+            <h3>Choose payment method <a href="#popup" class="icon-help js-popup-link">
+              </a></h3>
+            <ul class="paywith__services">
+            <li><a href="https://cubits.test/#" class="is-active">
+              <i class="icon-sofort-color"></i>
+            </a>
+            </li><li><a href="https://cubits.test/#" class="">
+              <i class="icon-skrill-color"></i>
+            </a>
+            </li><li><a href="https://cubits.test/#" class="is-disabled">
+              <i class="icon-dotpay"></i>
+            </a>
+            </li><li><a href="https://cubits.test/#" class="">
+              <i class="icon-secure_trading"></i>
+            </a>
+            </li><li><a href="https://cubits.test/#" class="">
+              <i class="icon-okpay-color"></i>
+            </a>
+            </li><li><a id="cubio" href="https://cubits.test/#" class="cashaccountoption is-filled is-disabled">
+                <div class="cashaccount__value">
+                  <h3>
+                    <i class="icon-cube_logo_dark"></i>
+                    Cash account
+                  </h3>
+                  <div class="cashaccount__money">0.00 <span>EUR</span></div>
+                </div>
+            </a> 
+            </li></ul>
+          </div>
+          <!-- end paywith -->
+
+          <!-- begin direct_buy_warning -->
+          <div id="direct_buy_warning">
+            Current Bitcoin price is guaranteed, transaction confirmation may take up to 2 days
+          </div>
+          <!-- end direct_buy_warning -->
+
+          <!-- begin confirm -->
+          <div class="confirm">
+            <div class="confirm__amount">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <td class="table__text"><strong>You are buying</strong></td>
+                    <td class="table__amount"><span id="total_receiver_amount">0.00</span> <span class="table__currency">BTC</span></td>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td class="table__text">Buy price <span id="exchange_rate_wrap" style="display:none;"><span id="total_exchange_rate_sender">0.00</span> <span class="total_sender_currency">EUR</span>/BTC</span></td>
+                  <td class="table__amount"><span id="amount_minus_fees">0.00</span> <span class="table__currency total_sender_currency">EUR</span></td>
+                </tr>
+                <tr>
+                  <td class="table__text">Payment fee</td>
+                  <td class="table__amount">+ <span id="total_fee_amount">0.00</span> <span class="table__currency total_sender_currency">EUR</span></td>
+                </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td class="table__text">
+                      Total
+                    </td>
+                    <td class="table__amount">
+                      <span id="total_sender_amount">0.00</span> <span class="table__currency total_sender_currency">EUR</span>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            <div class="confirm__button is-disabled">Confirm</div>
+          </div>
+          <!-- /confirm -->
+
+        </div>
+        <!-- end in -->
+        </div>
+          <!-- END tab direct_buy -->
+
+          <!-- BEGIN tab bank_transfer -->
+        <div class="tabs__content js-tabs-content" data-id="#buy/bank_tranfer">
+          <div class="steps  steps_spaced">
+            <div class="steps__step steps__1"><i class="icon-invoice"></i><div class="steps__title">Place Buy Order</div></div>
+            <div class="steps__step steps__2"><i class="icon-deposit"></i><div class="steps__title">Make Bank Transfer</div></div>
+            <div class="steps__step steps__3"><i class="icon-cubewhite"></i><div class="steps__title">Cubits awaits settlement (1-5 days)</div></div>
+            <div class="steps__step steps__4"><i class="icon-buy"></i><div class="steps__title">Get Bitcoins</div></div>
+            <div class="steps__line"><div class="steps__fill"></div></div>
+          </div>
+
+          <!-- begin exchange  -->
+          <div class="exchange">
+
+            <div class="exchange__col">
+              <label for="">Spend</label>
+              <div class="input-buy js-sender-block" id="sender_block">
+                <div class="input-buy__tilda">~</div>
+                <input type="text" class="js-sender-amount" name="" value="" id="sender_amount" placeholder="0.00" style="border: 4px solid rgb(30, 190, 187);">
+                <div class="error" id="sender_amount_error" style="display:none;"></div>
+                <div class="input-buy__currency input-buy__currency_drop">
+                  <div class="input-buy__currencyvalue">EUR</div>
+                  <i class="icon-next"></i>
+                  <div class="input-buy__currencydrop">
+                    <ul>
+                      <li>AUD</li>
+                      <li>CAD</li>
+                      <li>CHF</li>
+                      <li>CZK</li>
+                      <li>DKK</li>
+                      <li>EUR</li>
+                      <li>GBP</li>
+                      <li>HRK</li>
+                      <li>HUF</li>
+                      <li>JPY</li>
+                      <li>NOK</li>
+                      <li>PLN</li>
+                      <li>RUB</li>
+                      <li>SEK</li>
+                      <li>TRY</li>
+                      <li>USD</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="exchange__col">
+              <label for="">To get</label>
+              <div class="input-buy js-receiver-block is-tilda" id="receiver_block">
+                <div class="input-buy__tilda">~</div>
+                <input type="text" class="js-receiver-amount" name="" value="" id="receiver_amount" placeholder="">
+                <div class="error" id="receiver_amount_error" style="display:none;"></div>
+                <div class="input-buy__currency">BTC</div>
+              </div>
+            </div>
+          </div>
+          <!-- end exchange -->
+        <!-- end in -->
+        <div class="hr"></div>
+        <!-- begin in -->
+        <div class="in">
+
+          <!-- begin cashout -->
+          <div class="cashout">
+            <!-- begin paywith -->
+            <div class="paywith paywith_dos">
+              <h3>Choose payment method <a href="#popup-2" class="icon-help js-popup-link"></a></h3>
+              <ul class="paywith__services">
+                <li>
+                  <a href="#" class="is-active"><i class="icon-sepa"></i></a>
+                </li>
+                <li>
+                  <a href="#" class="paywith__text">International bank transfer</a>
+                </li>
+              </ul>
+            </div>
+            <!-- end paywith -->
+
+            <!-- start bank_transfer_warning -->
+            <div id="bank_transfer_warning">
+              Bitcoin conversion will happen at the time we receive the bank transfer so the Bitcoin amount you receive might change!
+            </div>
+            <!-- end bank_transfer_warning -->
+          </div>
+          <!-- end cashout -->
+
+          <!-- begin confirm -->
+          <div class="confirm">
+            <div class="confirm__amount">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <td class="table__text"><strong>You are buying</strong></td>
+                    <td class="table__amount"><span id="total_receiver_amount">0.00</span> <span class="table__currency">BTC</span></td>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td class="table__text">Buy price <span id="exchange_rate_wrap" style="display:none;"><span id="total_exchange_rate_sender">0.00</span> <span class="total_sender_currency">EUR</span>/BTC</span></td>
+                  <td class="table__amount"><span id="amount_minus_fees">0.00</span> <span class="table__currency total_sender_currency">EUR</span></td>
+                </tr>
+                <tr>
+                  <td class="table__text">Payment fee</td>
+                  <td class="table__amount">+ <span id="total_fee_amount">0.00</span> <span class="table__currency total_sender_currency">EUR</span></td>
+                </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td class="table__text">
+                      Total
+                    </td>
+                    <td class="table__amount">
+                      <span id="total_sender_amount">0.00</span> <span class="table__currency total_sender_currency">EUR</span>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            <div class="confirm__button is-disabled">Confirm</div>
+          </div>
+          <!-- /confirm -->
+
+        </div>
+        <!-- end in -->
+      </div>
+      <!-- END tab bank_transfer -->
+
+  </div>
+  <!-- end in  -->
+
+</div>
+<!-- end l-content -->
+
+
+      <!--BEGIN expand your business-->
+      <div class="skew-box skew-box_buy-btc">
+        <div class="skew-box__inner skew-box_buy-btc">
+          <div class="l-center-wide">
+            <div class="expand expand_buy">
+              <div class="expand__item">
+                <div class="expand__icon"><i class="icon icon-wallet"></i></div>
+                <div class="expand__number">1.</div>
+                <div class="expand__title">Create Cubits<br><span>Bitcoin wallet</span></div>
+                <div class="expand__text expand__text_buy-btc">Quickly create a Cubits Wallet for all of your Bitcoin transactions, it is free and takes only a minute.</div>
+              </div>
+              <div class="expand__item">
+                <div class="expand__icon"><i class="icon icon-comp-id"></i></div>
+                <div class="expand__number">2.</div>            
+                <div class="expand__title">Complete id<br><span>Verification</span></div>
+                <div class="expand__text expand__text_buy-btc">With our user-friendly technology partner IDnow, remove all your trading limits by completing our verification process.</div>                
+              </div>
+              <div class="expand__item">
+                <div class="expand__icon"><i class="icon icon-bit"></i></div>
+                <div class="expand__number">3.</div>
+                <div class="expand__title">Buy and sell<br><span>Bitcoin</span></div>
+                <div class="expand__text expand__text_buy-btc">Take of advantage of the best prices for Bitcoin around the globe with Cubits' international order book.</div>                
+              </div>
+              </div>
+              <button type="button" class="btn btn_darkblue btn_large btn_w395">I want a cubits bitcoin wallet</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END expand your business-->
+
+      <!--BEGIN footer-->
+      <footer class="footer">
+        <div class="l-center-narrow">
+          <ul class="footer__links">
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="about-btc.html">About Bitcoin</a></li>
+            <li><a href="security.html">Security</a></li>
+            <li><a href="#">Merchants</a></li>
+            <li><a href="#">Sign up</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
+          <hr class="divider">
+          <ul class="footer__links footer__links_small">
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">T&C</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+            <li>
+              <div class="lang">
+              <a href="#" class="lang__link">
+                <img src="img/gr.png" class="choose-lang" title="lang" alt="lang">
+              </a>
+              <div class="lang__drop">
+                <ul class="lang__list">
+                  <li class="is-chosen-lang"><a href="#" class="lang__item">
+                    <img src="img/gr.png" title="Your lang" alt="lang">
+                    <span class="lang__title">English</span>
+                  </a></li>
+                  <li><a href="#" class="lang__item">
+                    <img src="img/usa.png" title="Your lang" alt="lang">
+                    <span class="lang__title">English</span>
+                  </a></li>
+                  <li><a href="#" class="lang__item">
+                    <img src="img/pl.png" title="Your lang" alt="lang">
+                    <span class="lang__title">English</span>
+                  </a></li>
+                  <li><a href="#" class="lang__item">
+                    <img src="img/tr.png" title="Your lang" alt="lang">
+                    <span class="lang__title">English</span>
+                  </a>
+                </li>
+              </ul> 
+              </div>
+            </div>
+          </li>
+          </ul>
+          <div class="footer__social"><a href="#" class="social-btn"><i class="icon icon-tw"></i><span>2500</span></a><a href="#" class="social-btn"><i class="icon icon-fb"></i><span>1000</span></a><a href="#" class="social-btn"><i class="icon icon-gplus"></i><span>1000</span></a></div>
+        </div>
+      </footer>
+      <!--END footer-->
+    </div>
+    <!--END out-->
+
+<!-- BEGIN popup for direct_buy -->
+<div id="popup" class="popup">
+  <div class="popup__content" >
+  <div class="popup__title">Payment options</div>
+  <div class="popup__close"></div>
+  <div class="popup__inside">
+
+    <!-- begin po  -->
+    <div class="po">
+      <div class="po__descr">Below, we've ranked our payment options by order of convenience.</div>
+      <table class="po__table">
+        <thead>
+          <tr>
+            <th>
+              #
+            </th>
+            <td class="po__provider">Provider</td>
+            <td class="po__description">Description</td>
+            <td class="po__fee">Fee*</td>
+            <td class="po__duration">Duration</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td class="po__provider"><span class="cashaccountprovider"><i class="icon-cash"></i>Cash Account</span></td>
+            <td class="po__description">After making a deposit, you can use the available balance on  your Cubits Cash Account to buy Bitcoin instantly.</td>
+            <td class="po__fee is-red">0 %</td>
+            <td class="po__duration">Instant</td>
+          </tr>
+          <tr>
+            <th>
+              2
+            </th>
+            <td class="po__provider"><i class="icon-obt-logo-dark"></i></td>
+            <td class="po__description">OnlineBankTransfer.com (OBT) is supported by major banks within seven European countries. Have your online banking ID, password, and TAN-list ready when selecting OBT.</td>
+            <td class="po__fee ">0.80%</td>
+            <td class="po__duration">Up to 2 days</td>
+          </tr>
+          <tr>
+            <th>
+              3
+            </th>
+            <td class="po__provider"><i class="icon-secure_trading"></i></td>
+            <td class="po__description">Verified users can pay with 3D-secure enabled credit cards.</td>
+            <td class="po__fee ">3.50%</td>
+            <td class="po__duration">Instant</td>
+          </tr>
+          <tr>
+            <th>
+              4
+            </th>
+            <td class="po__provider"><i class="icon-sofort"></i></td>
+            <td class="po__description">Sofort is supported by most banks within 10 European member countries. Have your online banking ID, password, and Tan-list ready when selecting Sofort.</td>
+            <td class="po__fee ">1.80%</td>
+            <td class="po__duration">Up to 2 days</td>
+          </tr>
+          <tr>
+            <th>
+              5
+            </th>
+            <td class="po__provider"><i class="icon-okpay"></i></td>
+            <td class="po__description">Verified OKPAY users can instantly load, send, receive, and withdraw money to and from their account. If you have a balance on your OKPAY account, buying bitcoin is quick and simple.</td>
+            <td class="po__fee ">0.50%</td>
+            <td class="po__duration">Instant</td>
+          </tr>
+          <tr>
+            <th>
+              6
+            </th>
+            <td class="po__provider"><i class="icon-dotpay"></i></td>
+            <td class="po__description">With Dotpay our users can pay directly from their bank accounts in Poland.</td>
+            <td class="po__fee ">1.8%<br>(min:0.3PLN)</td>
+            <td class="po__duration">Instant</td>
+          </tr>
+
+        </tbody>
+      </table>
+      <div style="padding-top:1em; text-align:center;">* a 0.9% fee is added when your local currency is converted to BTC and vice-versa.</div>
+    </div>
+    <!-- end po -->
+
+  </div>
+</div>
+</div>
+<!-- END popup for direct_buy -->
+
+<!-- BEGIN popup for bank_transfer -->
+<div id="popup-2" class="popup">
+  <div class="popup__content" >
+  <div class="popup__title">Payment options</div>
+  <div class="popup__close"></div>
+  <div class="popup__inside">
+
+    <!-- begin po  -->
+    <div class="po">
+      <div class="po__descr">Below, we've ranked our payment options by order of convenience.</div>
+      <table class="po__table">
+        <thead>
+          <tr>
+            <th>
+              #
+            </th>
+            <td class="po__provider">Provider</td>
+            <td class="po__description">Description</td>
+            <td class="po__fee">Fee*</td>
+            <td class="po__duration">Duration</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>
+              1
+            </th>
+            <td class="po__provider"><i class="icon-sepa"></i></td>
+            <td class="po__description">Use SEPA for bank transfers in the greater European area. SEPA payments are wire transfers to and from our payment bank. We will provide you with the banking information necessary to execute a transfer.</td>
+            <td class="po__fee">0.00 €</td>
+            <td class="po__duration">1-3 Business Days</td>
+          </tr>
+
+          <tr>
+            <th>
+              2
+            </th>
+            <td class="po__provider"><strong>SWIFT</strong></td>
+            <td class="po__description">Use SWIFT for payments outside the SEPA zone. We will provide you with the banking information necessary for the transfer. Note that you have to specify SHA as payment instructions, meaning that you will cover any fees imposed by your bank.</td>
+            <td class="po__fee">16.00€</td>
+            <td class="po__duration">3-5 Business Days</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="padding-top:1em; text-align:center;">* a 0.9% fee is added when your local currency is converted to BTC and vice-versa.</div>
+    </div>
+    <!-- end po -->
+
+  </div>
+</div>
+</div>
+<!-- END popup for bank_transfer -->
+
+    <!--LOAD SCRIPTS-->
+    <script src="js/lib/jquery-1.9.0.min.js"></script>
+    <script src="js/lib/slick.min.js"></script>
+    <script src="js/lib/jquery.tooltipster.min.js"></script>
+    <script src="js/lib/jquery.shuffle.modernizr.min.js"></script>
+    <script src="js/lib/jquery.fancybox.pack.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

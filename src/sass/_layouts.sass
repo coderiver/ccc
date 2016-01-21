@@ -1,0 +1,99 @@
+.l-center,
+.l-columns-aside,
+.l-columns-team,
+.l-columns-job,
+.l-contacts
+  max-width: 960px
+  margin: auto
+  padding: 0 30px
+
+.l-center
+  .l-columns-aside,
+  .l-columns-job,
+  .l-contacts
+    padding: 0
+
+.l-center-wide
+  max-width: 1140px
+  margin: auto
+  padding: 0 30px
+  text-align: center 
+
+.l-center-narrow
+  max-width: 640px
+  margin: auto
+  padding: 0 30px
+
+.l-column
+  float: left
+  box-sizing: border-box
+  width: 50%
+  padding: 0 20px
+  .skew-box_two-colors &:nth-child(2)
+    color: $yellow
+
+.l-columns
+  margin: 0 -20px
+  +clr
+  &.three
+    .l-column
+      width: 33.333%
+
+.l-columns-wide
+  +clr
+  .l-column
+    padding-left: percentage(70/1440)
+    padding-right: percentage(70/1440)
+
+.l-columns-text
+  +clr
+  .l-column
+    padding-left: percentage(70/1440)
+    padding-right: percentage(70/1440)
+    &:first-child
+      padding-left: percentage(140/1440)
+      padding-right: percentage(70/1440)
+    &:last-child
+      padding-left: percentage(70/1440)
+      padding-right: percentage(140/1440)
+
+.l-columns-team
+  +clr
+  .l-column
+    padding: 0
+    &:first-child
+      width: percentage(680/960)
+    &:last-child
+      float: right
+      width: percentage(240/960)
+
+.l-columns-aside
+  +clr
+  .l-column
+    padding: 0
+    &:first-child
+      width: percentage(640/960)
+    &:last-child
+      float: right
+      width: percentage(260/960)
+
+.l-columns-job
+  +clr
+  .l-column
+    padding: 0
+    &:first-child
+      width: percentage(600/960)
+    &:last-child
+      float: right
+      width: percentage(300/960)
+
+.l-contacts
+  +clr
+  .l-column
+    padding: 0
+    &:first-child
+      width: percentage(640/960)
+    &:last-child
+      float: right
+      width: percentage(260/960)
+
