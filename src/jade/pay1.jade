@@ -11,31 +11,52 @@ link(rel="stylesheet" media="all" href="css/screen.css")
 	.pay
 		.pay__header
 			.col.col1
-				button(type="button" class="button button_blue") << Cancel and return back
+				button(type="button" class="button-med button_blue") << Cancel and return back
 			.col.col2
-				.pay__time
+				.pay-time
 					i.icon-clock 
 					span 09:34
 		.pay__logo
-			img(src="img/pay-logo.png")
-		table.pay__table
+			img(src="img/pay-logo.png" alt="logo" title="logo")
+		table.pay__t-table
 			tr
-				td.
-					Iphone 7S
-				td.
-					10.00  EUR
+				td
+					.pay-text Iphone 7S
+				td.is-right
+					.pay-text 10.00 
+						span.is-green EUR
 			tr
-				td.
-					Usual unexisting device
+				td
+					.pay-meta Usual unexisting device
 			tr
-				td.
-					Amount due
-				td.
-					0.0345678 BTC
-		.pay__buttons
-			button(type="button btn_green") pay with external wallet
-			button(type="button btn_gray") pay with Cubits wallet
-
-
+				td
+					.pay-text Amount due
+				td.is-right
+					.pay-text 0.0345678 
+						span.is-green BTC
+		.pay__wallet
+			a(href="#" class="pay-external") pay with external wallet
+			a(href="#" class="pay-cubits") pay with Cubits wallet
+		.pay__info.pay__info_mod1
+			.col.col1
+				.pay-warn.
+					Opps, looks like you’ve <br>
+					payed only o.oo75694 BTC
+				.pay-text.
+					Send 0.00100000 BTC more to
+				input(type="text" class="pay-input")
+				a.pay-link Copy address
+			.col.col2
+				.pay-qr
+					img(src="img/qr.jpg" alt="QR-код" title="QR-код")
+		.pay__footer
+			button(type="button" class="button-big button_green")
+				i.icon-b
+				span open my bitcoin wallet
+			button(type="button" class="button-big button_green button_wait" style={display: "none"})
+				i.icon-wait
+				span please wait...
+			.pay__copy
+				.pay-meta Powered by Cubits.com
 
 

@@ -8,29 +8,56 @@
   <div class="pay">
     <div class="pay__header">
       <div class="col col1">
-        <button type="button" class="button button_blue"><< Cancel and return back</button>
+        <button type="button" class="button-med button_blue"><< Cancel and return back</button>
       </div>
       <div class="col col2">
-        <div class="pay__time"><i class="icon-clock"> </i><span>09:34</span></div>
+        <div class="pay-time"><i class="icon-clock"> </i><span>09:34</span></div>
       </div>
     </div>
-    <div class="pay__logo"><img src="img/pay-logo.png"/></div>
-    <table class="pay__table">
+    <div class="pay__logo"><img src="img/pay-logo.png" alt="logo" title="logo"/></div>
+    <table class="pay__t-table">
       <tr>
-        <td>Iphone 7S</td>
-        <td>10.00  EUR</td>
+        <td>
+          <div class="pay-text">Iphone 7S</div>
+        </td>
+        <td class="is-right">
+          <div class="pay-text">10.00 <span class="is-green">EUR</span></div>
+        </td>
       </tr>
       <tr>
-        <td>Usual unexisting device</td>
+        <td>
+          <div class="pay-meta">Usual unexisting device</div>
+        </td>
       </tr>
       <tr>
-        <td>Amount due</td>
-        <td>0.0345678 BTC</td>
+        <td>
+          <div class="pay-text">Amount due</div>
+        </td>
+        <td class="is-right">
+          <div class="pay-text">0.0345678 <span class="is-green">BTC</span></div>
+        </td>
       </tr>
     </table>
-    <div class="pay__buttons">
-      <button type="button btn_green">pay with external wallet</button>
-      <button type="button btn_gray">pay with Cubits wallet</button>
+    <div class="pay__wallet"><a href="#" class="pay-external">pay with external wallet</a><a href="#" class="pay-cubits">pay with Cubits wallet</a></div>
+    <div class="pay__info pay__info_mod1">
+      <div class="col col1">
+        <div class="pay-warn">
+          Opps, looks like you’ve <br>
+          payed only o.oo75694 BTC
+        </div>
+        <div class="pay-text">Send 0.00100000 BTC more to</div>
+        <input type="text" class="pay-input"/><a class="pay-link">Copy address</a>
+      </div>
+      <div class="col col2">
+        <div class="pay-qr"><img src="img/qr.jpg" alt="QR-код" title="QR-код"/></div>
+      </div>
+    </div>
+    <div class="pay__footer">
+      <button type="button" class="button-big button_green"><i class="icon-b"></i><span>open my bitcoin wallet</span></button>
+      <button type="button" style="display:none" class="button-big button_green button_wait"><i class="icon-wait"></i><span>please wait...</span></button>
+      <div class="pay__copy">
+        <div class="pay-meta">Powered by Cubits.com</div>
+      </div>
     </div>
   </div>
 </div>
