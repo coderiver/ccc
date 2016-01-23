@@ -1,0 +1,68 @@
+meta(charset="utf-8")
+block title
+	title Payment
+block viewport
+	meta(name="viewport" content="width=device-width")
+meta(name="format-detection" content="telephone=no")
+link(rel="stylesheet" media="all" href="css/screen.css")
+<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+
+.out
+	.pay
+		.pay__header
+			.col.col1
+				button(type="button" class="button-med button_blue" style={visibility: "hidden"}) << Cancel and return back
+			.col.col2
+				.pay-time
+					i.icon-warning-sm 
+					span 00:00
+		.pay__logo
+			img(src="img/pay-logo.png" alt="logo" title="logo")
+		table.pay__t-table
+			tr
+				td.is-left
+					.pay-text Iphone 7S
+				td.is-right
+					.pay-text 10.00 
+						span.is-green EUR
+			tr
+				td.is-left
+					.pay-meta Usual unexisting device
+			tr
+				td.is-left
+					.pay-text Amount due
+				td.is-right
+					.pay-text 0.0345678 
+						span.is-green BTC
+		.pay__wallet(style={display: "none"})
+			a(href="#" class="pay-external") pay with external wallet
+			a(href="#" class="pay-cubits") pay with Cubits wallet
+		.pay__info.pay__info_mod4
+			.pay__row
+				figure
+					p
+						i.icon-warning
+					figcaption.pay-warn
+						| transaction failed. you’ve underpaid this invoice.
+			.pay__row
+				.pay-text 
+					|paid: 0.00751694 bts
+			.pay__row
+				.col1
+					input(type="text" class="pay-input" placeholder="Enter your BTC address here")
+				.col2
+					button(type="button" class="button-sm button_blue") request refund
+
+
+		.pay__footer
+			button(type="button" class="button-big button_green")
+				span 
+					| return to the website
+
+			button(type="button" class="button-big button_green button_wait" style={display: "none"})
+				i.icon-wait
+				span please wait...
+			.pay__copy
+				.pay-meta Powered by Cubits.com
+
+
