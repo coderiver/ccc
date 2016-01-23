@@ -83,6 +83,7 @@ $gray: #d1d3de
 	font-size: 16px
 	text-transform: uppercase
 	color: #363558
+	letter-spacing: -0.03em
 	.is-green
 		color: #53c1c1
 .pay-warn
@@ -191,8 +192,11 @@ $gray: #d1d3de
 		td
 			vertical-align: top
 			padding-bottom: 25px
+			&.is-left
+				padding-left: 23px
 			&.is-right
 				text-align: right
+				padding-right: 16px
 	&__wallet
 		font-size: 0
 		margin-top: 30px
@@ -209,18 +213,20 @@ $gray: #d1d3de
 		margin-bottom: 18px
 		&.pay__info_mod1
 			.pay-warn
-				margin-bottom: 11px
+				margin-bottom: 9px
 			.pay-text
-				margin-bottom: 19px
+				margin-bottom: 13px
 			.pay-input
 				margin-bottom: 7px
+				display: block
+				width: 100%
 		.col
 			display: inline-block
 			vertical-align: top
 		.col1
-			width: 65%
+			width: 60%
 		.col2
-			width: 35%
+			width: 40%
 		.pay-link
 			display: inline-block
 		.pay-qr

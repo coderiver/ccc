@@ -1766,7 +1766,7 @@ label.office { cursor: pointer; }
 
 .icon-wait { width: 14px; height: 14px; background-image: url("../img/icon-wait.png"); display: inline-block; -webkit-animation: turn 1.3s linear infinite; animation: turn 1.3s linear infinite; }
 
-.pay-text { font-family: "proximanova-bold", Arial, sans-serif; font-size: 16px; text-transform: uppercase; color: #363558; }
+.pay-text { font-family: "proximanova-bold", Arial, sans-serif; font-size: 16px; text-transform: uppercase; color: #363558; letter-spacing: -0.03em; }
 .pay-text .is-green { color: #53c1c1; }
 
 .pay-warn { font-size: 14px; text-transform: uppercase; color: #d86780; text-transform: uppercase; font-family: "proximanova-bold", Arial, sans-serif; }
@@ -1803,16 +1803,17 @@ label.office { cursor: pointer; }
 .pay__header .pay-time { float: right; margin-bottom: 3px; }
 .pay__t-table { margin-top: 36px; }
 .pay__t-table td { vertical-align: top; padding-bottom: 25px; }
-.pay__t-table td.is-right { text-align: right; }
+.pay__t-table td.is-left { padding-left: 23px; }
+.pay__t-table td.is-right { text-align: right; padding-right: 16px; }
 .pay__wallet { font-size: 0; margin-top: 30px; }
 .pay__wallet a { width: 50%; display: inline-block; vertical-align: top; }
 .pay__info { min-height: 192px; background-color: white; border: 1px solid #b9bbc7; font-size: 0; padding: 25px 28px 20px 20px; margin-bottom: 18px; }
-.pay__info.pay__info_mod1 .pay-warn { margin-bottom: 11px; }
-.pay__info.pay__info_mod1 .pay-text { margin-bottom: 19px; }
-.pay__info.pay__info_mod1 .pay-input { margin-bottom: 7px; }
+.pay__info.pay__info_mod1 .pay-warn { margin-bottom: 9px; }
+.pay__info.pay__info_mod1 .pay-text { margin-bottom: 13px; }
+.pay__info.pay__info_mod1 .pay-input { margin-bottom: 7px; display: block; width: 100%; }
 .pay__info .col { display: inline-block; vertical-align: top; }
-.pay__info .col1 { width: 65%; }
-.pay__info .col2 { width: 35%; }
+.pay__info .col1 { width: 60%; }
+.pay__info .col2 { width: 40%; }
 .pay__info .pay-link { display: inline-block; }
 .pay__info .pay-qr { float: right; }
 .pay__footer .pay__copy { padding-top: 12px; }
