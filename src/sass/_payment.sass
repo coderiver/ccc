@@ -24,15 +24,27 @@ $gray: #d1d3de
 	text-align: center
 	position: relative
 	+tr(all 0.3s)
+%button3
+	width: 100%
+	height: 27px
+	line-height: 23px
+	border: 3px solid transparent
+	text-align: center
+	position: relative
+	+tr(all 0.3s)
+.button-sm
+	@extend %button3
+	text-transform: uppercase
+	+bold
+	font-size: 12px
+	color: #f9fcfd
+	letter-spacing: 0.01em
 .button-med
 	@extend %button1
 	text-transform: uppercase
 	+bold
 	font-size: 12px
 	color: #f9fcfd
-	&:hover
-		opacity: 0.8
-		+tr(all 0.3s)
 .button-big
 	@extend %button2
 	+bold
@@ -75,7 +87,16 @@ $gray: #d1d3de
 	background-image: url('../img/icon-wait.png')
 	display: inline-block
 	animation: turn 1.3s linear infinite
-
+.icon-warning
+	width: 38px
+	height: 38px
+	background-image: url('../img/icon-warning.png')
+	display: inline-block	
+.icon-warning-sm
+	width: 15px
+	height: 15px
+	background-image: url('../img/icon-warning-sm.png')
+	display: inline-block
 
 	
 .pay-text
@@ -98,6 +119,7 @@ $gray: #d1d3de
 	text-transform: uppercase
 	font-size: 16px
 .pay-input
+	width: 100%
 	height: 27px
 	line-height: 27px
 	background-color: #fff
@@ -186,12 +208,12 @@ $gray: #d1d3de
 			width: 50%
 		.pay-time
 			float: right
-			margin-bottom: 3px
+			margin-top: 14px
 	&__t-table
 		margin-top: 36px
 		td
 			vertical-align: top
-			padding-bottom: 25px
+			padding-bottom: 22px
 			&.is-left
 				padding-left: 23px
 			&.is-right
@@ -220,7 +242,24 @@ $gray: #d1d3de
 				margin-bottom: 7px
 				display: block
 				width: 100%
-		.col
+		&.pay__info_mod3
+			padding: 16px 28px 20px 20px
+			figure
+				text-align: center
+				margin-bottom: 25px
+				.pay-warn
+					font-size: 14px
+			p
+				margin-bottom: 10px
+			.pay-text
+				margin-bottom: 6px
+			.col1
+				width: 56%
+				margin-right: 2%
+			.col2
+				width: 42%
+
+		[class^="col"], [class*="col"]
 			display: inline-block
 			vertical-align: top
 		.col1
@@ -236,10 +275,11 @@ $gray: #d1d3de
 			padding-top: 12px
 		.pay-meta
 			text-align: center
+			text-transform: inherit
 		button
 			position: relative
 			.icon-b
-				margin: 0 17px 0 0
+				margin: 0 17px 0 -17px
 				position: relative
 				top: 3px
 			.icon-wait
