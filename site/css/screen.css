@@ -1773,6 +1773,10 @@ label.office { cursor: pointer; }
 
 .icon-warning-sm { width: 15px; height: 15px; background-image: url("../img/icon-warning-sm.png"); display: inline-block; }
 
+.icon-succes { width: 38px; height: 38px; background-image: url("../img/icon-succes.png"); display: inline-block; }
+
+.icon-succes-sm { width: 14px; height: 10px; background-image: url("../img/icon-succes-sm.png"); display: inline-block; }
+
 .pay-text { font-family: "proximanova-bold", Arial, sans-serif; font-size: 16px; text-transform: uppercase; color: #363558; letter-spacing: -0.03em; }
 .pay-text .is-green { color: #53c1c1; }
 
@@ -1789,6 +1793,7 @@ label.office { cursor: pointer; }
 .pay-time { color: #747370; display: inline-block; font-family: "AvenirNext-Italic", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 12px; }
 .pay-time span { display: inline-block; vertical-align: middle; }
 .pay-time i { vertical-align: top; margin-right: 8px; }
+.pay-time .icon-succes-sm { vertical-align: middle; }
 
 .pay-external, .pay-cubits { color: #f9fcfd; font-size: 12px; text-transform: uppercase; font-family: "proximanova-bold", Arial, sans-serif; text-align: center; text-decoration: none; height: 34px; line-height: 36px; letter-spacing: 0.1em; cursor: pointer; }
 .pay-external:hover, .pay-cubits:hover { color: #f9fcfd; transition: all 0.3s; }
@@ -1831,6 +1836,9 @@ label.office { cursor: pointer; }
 .pay__info.pay__info_mod4 .pay-text { margin-bottom: 3px; }
 .pay__info.pay__info_mod4 .col1 { width: 56%; margin-right: 2%; }
 .pay__info.pay__info_mod4 .col2 { width: 42%; }
+.pay__info.pay__info_mod5 { padding: 11px 12px 20px; }
+.pay__info.pay__info_mod5 figure { margin-bottom: 36px; }
+.pay__info.pay__info_mod5 .pay-meta { font-size: 14px; }
 .pay__info [class^="col"], .pay__info [class*="col"] { display: inline-block; vertical-align: top; }
 .pay__info .col1 { width: 60%; }
 .pay__info .col2 { width: 40%; }
