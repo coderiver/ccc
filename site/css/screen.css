@@ -1840,6 +1840,9 @@ label.office { cursor: pointer; }
 .pay__info.pay__info_mod5 figure { margin-bottom: 36px; }
 .pay__info.pay__info_mod5 .pay-meta { font-size: 14px; }
 .pay__info.pay__info_mod7 { padding: 21px 28px 20px 20px; }
+.pay__info.pay__info_mod8 { padding: 11px 24px 20px; }
+.pay__info.pay__info_mod8 figure { margin-bottom: 22px; }
+.pay__info.pay__info_mod8 .pay-warn { line-height: 24px; }
 .pay__info [class^="col"], .pay__info [class*="col"] { display: inline-block; vertical-align: top; }
 .pay__info .col1 { width: 60%; }
 .pay__info .col2 { width: 40%; }
