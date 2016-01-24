@@ -1847,7 +1847,7 @@ label.office { cursor: pointer; }
 .pay__info.pay__info_mod9 .pay__row { text-align: center; }
 .pay__info.pay__info_mod9 .pay-text { margin-bottom: 3px; }
 .pay__info.pay__info_mod9 .pay-meta { text-transform: inherit; }
-.pay__info.pay__info_mod10 { padding: 9px 0 20px 22px; }
+.pay__info.pay__info_mod10 { padding: 9px 15px 20px 15px; }
 .pay__info.pay__info_mod10 figure figcaption { line-height: 20px; }
 .pay__info.pay__info_mod10 .pay__row { text-align: center; }
 .pay__info.pay__info_mod10 .pay__row .col1, .pay__info.pay__info_mod10 .pay__row .col2 { width: 50%; }
