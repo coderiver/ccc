@@ -1853,6 +1853,11 @@ label.office { cursor: pointer; }
 .pay__info.pay__info_mod10 .pay__row .col1, .pay__info.pay__info_mod10 .pay__row .col2 { width: 50%; }
 .pay__info.pay__info_mod10 .pay__row .col1 .pay-text, .pay__info.pay__info_mod10 .pay__row .col2 .pay-text { text-align: left; margin-top: 20px; }
 .pay__info.pay__info_mod10 .pay-meta { text-transform: inherit; margin-top: 10px; }
+.pay__info.pay__info_mod12 { padding: 9px 15px 20px 15px; }
+.pay__info.pay__info_mod12 .col1 { width: 56%; margin-right: 2%; }
+.pay__info.pay__info_mod12 .col2 { width: 42%; }
+.pay__info.pay__info_mod12 .col1.is-mod, .pay__info.pay__info_mod12 .col2.is-mod { width: 50%; margin: 0; }
+.pay__info.pay__info_mod12 .pay-text { line-height: 18px; margin-bottom: 15px; }
 .pay__info [class^="col"], .pay__info [class*="col"] { display: inline-block; vertical-align: top; }
 .pay__info .col1 { width: 60%; }
 .pay__info .col2 { width: 40%; }
