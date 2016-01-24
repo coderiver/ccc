@@ -1847,6 +1847,12 @@ label.office { cursor: pointer; }
 .pay__info.pay__info_mod9 .pay__row { text-align: center; }
 .pay__info.pay__info_mod9 .pay-text { margin-bottom: 3px; }
 .pay__info.pay__info_mod9 .pay-meta { text-transform: inherit; }
+.pay__info.pay__info_mod10 { padding: 9px 0 20px 22px; }
+.pay__info.pay__info_mod10 figure figcaption { line-height: 20px; }
+.pay__info.pay__info_mod10 .pay__row { text-align: center; }
+.pay__info.pay__info_mod10 .pay__row .col1, .pay__info.pay__info_mod10 .pay__row .col2 { width: 50%; }
+.pay__info.pay__info_mod10 .pay__row .col1 .pay-text, .pay__info.pay__info_mod10 .pay__row .col2 .pay-text { text-align: left; margin-top: 20px; }
+.pay__info.pay__info_mod10 .pay-meta { text-transform: inherit; margin-top: 10px; }
 .pay__info [class^="col"], .pay__info [class*="col"] { display: inline-block; vertical-align: top; }
 .pay__info .col1 { width: 60%; }
 .pay__info .col2 { width: 40%; }
