@@ -1781,6 +1781,7 @@ label.office { cursor: pointer; }
 
 .pay-text { font-family: "proximanova-bold", Arial, sans-serif; font-size: 16px; text-transform: uppercase; color: #363558; letter-spacing: -0.03em; }
 .pay-text .is-green { color: #53c1c1; }
+.pay-text.is-red { color: #d86780; }
 
 .pay-warn { font-size: 14px; text-transform: uppercase; color: #d86780; text-transform: uppercase; font-family: "proximanova-bold", Arial, sans-serif; }
 
@@ -1816,6 +1817,7 @@ label.office { cursor: pointer; }
 .pay__t-table td { vertical-align: top; padding-bottom: 22px; }
 .pay__t-table td.is-left { padding-left: 23px; }
 .pay__t-table td.is-right { text-align: right; padding-right: 16px; }
+.pay__trn { text-align: center; margin-top: 30px; }
 .pay__wallet { font-size: 0; margin-top: 30px; }
 .pay__wallet a { width: 50%; display: inline-block; vertical-align: top; color: #f9fcfd; font-size: 12px; text-transform: uppercase; font-family: "proximanova-bold", Arial, sans-serif; text-align: center; text-decoration: none; height: 34px; line-height: 36px; letter-spacing: 0.1em; cursor: pointer; }
 .pay__wallet a:hover { color: #f9fcfd; transition: all 0.3s; }
@@ -1823,7 +1825,9 @@ label.office { cursor: pointer; }
 .pay__info figure { text-align: center; }
 .pay__info figure p { padding-bottom: 10px; }
 .pay__info figure .pay-warn { font-size: 14px; line-height: 24px; }
-.pay__info .pay-kwrap { text-align: center; }
+.pay__info .pay__kwrap { text-align: center; }
+.pay__info .pay__wtext { text-align: center; }
+.pay__info .pay__wtext { text-align: center; max-width: 310px; margin: auto; }
 .pay__info.pay__info_mod1 .pay-warn { margin-bottom: 9px; }
 .pay__info.pay__info_mod1 .pay-text { margin-bottom: 13px; }
 .pay__info.pay__info_mod1 .pay-input { margin-bottom: 7px; display: block; width: 100%; }

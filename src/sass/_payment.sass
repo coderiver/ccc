@@ -1,6 +1,7 @@
 //vars
 $green: #00bfbc
 $gray: #d1d3de
+$red: #d86780
 
 //fonts
 +font("proximanova-bold", "proximanova-bold")
@@ -121,6 +122,8 @@ $gray: #d1d3de
 	letter-spacing: -0.03em
 	.is-green
 		color: #53c1c1
+	&.is-red
+		color: $red
 .pay-warn
 	font-size: 14px
 	text-transform: uppercase
@@ -193,7 +196,6 @@ $gray: #d1d3de
 	font-size: 16px
 	color: #363558
 	box-sizing: border-box
-	
 	*
 		box-sizing: border-box
 
@@ -222,6 +224,9 @@ $gray: #d1d3de
 			&.is-right
 				text-align: right
 				padding-right: 16px
+	&__trn
+		text-align: center
+		margin-top: 30px
 	&__wallet
 		font-size: 0
 		margin-top: 30px
@@ -256,8 +261,14 @@ $gray: #d1d3de
 			.pay-warn
 				font-size: 14px
 				line-height: 24px
-		.pay-kwrap
+		.pay__kwrap
 			text-align: center
+		.pay__wtext
+			text-align: center
+		.pay__wtext
+			text-align: center
+			max-width: 310px
+			margin: auto
 		&.pay__info_mod1
 			.pay-warn
 				margin-bottom: 9px
