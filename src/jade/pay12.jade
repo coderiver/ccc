@@ -37,28 +37,29 @@ link(rel="stylesheet" media="all" href="css/screen.css")
 		.pay__wallet(style={display: "none"})
 			a(href="#" class="pay-green") pay with external wallet
 			a(href="#" class="pay-gray") pay with Cubits wallet
-		.pay__info.pay__info_mod12
+		.pay__info.pay__info_succ
 			.pay__row
 				figure
 					p
 						i.icon-succes
 					figcaption.pay-text
 						| paymant successfull! <br> but you’ve overpaid this invoice.
+			.pay__pa-ov
+				.pay-paid
+					.col1
+						.pay-text 
+							|paid: 
+							span.is-green 0.00751694 BTC
+					.col2
+						.pay-text 
+							|overplay: 
+							span.is-green 0.00751694 BTC
 			.pay__row
-				.col1.is-mod
-					.pay-text 
-						|paid: 
-						span.is-green 0.00751694 BTC
-				.col2.is-mod
-					.pay-text 
-						|overplay: 
-						span.is-green 0.00751694 BTC
-			.pay__row
-				.col1
-					input(type="text" class="pay-input" placeholder="Enter your BTC address here")
-				.col2
-					button(type="button" class="button-sm button_blue")
-						| request change
+				form(class="pay__form pay__form_no-marg" method="GET" action)
+					.col1
+						input(type="text" class="pay-input" placeholder="Enter your BTC address here")
+					.col2
+						button(type="button" class="button-sm button_blue") request refund
 
 		.pay__footer
 			button(type="button" class="button-big button_green")

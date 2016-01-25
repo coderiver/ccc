@@ -37,14 +37,14 @@ link(rel="stylesheet" media="all" href="css/screen.css")
 		.pay__wallet(style={display: "none"})
 			a(href="#" class="pay-green") pay with external wallet
 			a(href="#" class="pay-gray") pay with Cubits wallet
-		.pay__info.pay__info_mod10
+		.pay__info.pay__info_succ
 			.pay__row
 				figure
 					p
 						i.icon-succes
 					figcaption.pay-text
 						| paymant successfull! <br> but you’ve overpaid this invoice.
-			.pay__row
+			.pay__pa-ov
 				.col1
 					.pay-text 
 						|paid: 
@@ -53,7 +53,7 @@ link(rel="stylesheet" media="all" href="css/screen.css")
 					.pay-text 
 						|overplay: 
 						span.is-green 0.00751694 BTC
-			.pay__row
+			.pay-get
 				.pay-meta
 					| You will recerve 0.00751694 BTC shortly.
 					

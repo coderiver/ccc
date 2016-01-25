@@ -120,10 +120,12 @@ $red: #d86780
 	text-transform: uppercase
 	color: #363558
 	letter-spacing: -0.03em
-	.is-green
+	> .is-green
 		color: #53c1c1
 	&.is-red
 		color: $red
+	&.is-mod
+		margin: 37px 0 6px
 .pay-warn, .pay-lg
 	font-size: 14px
 	text-transform: uppercase
@@ -220,6 +222,10 @@ $red: #d86780
 			margin-top: 14px
 	&__t-table
 		margin-top: 36px
+		tr
+			&:last-child
+				td
+					padding-bottom: 0
 		td
 			vertical-align: top
 			padding-bottom: 22px
@@ -231,9 +237,13 @@ $red: #d86780
 	&__trn
 		text-align: center
 		margin-top: 30px
+		+ .pay__wallet
+			margin-top: 30px
 	&__wallet
 		font-size: 0
-		margin-top: 30px
+		margin-top: 54px
+		+ .pay__info
+			margin-top: 0
 		a
 			width: 50%
 			display: inline-block
@@ -258,8 +268,11 @@ $red: #d86780
 		font-size: 0
 		padding: 25px 28px 20px 20px
 		margin-bottom: 18px
+		&.pay__info_centered
+			text-align: center
 		figure
 			text-align: center
+			margin-bottom: 20px
 			p
 				padding-bottom: 10px
 			.pay-warn
@@ -299,6 +312,8 @@ $red: #d86780
 			margin-top: 15px
 		.pay__form
 			margin-top: 10px
+			&.pay__form_no-marg
+				margin-top: 0
 			.col1
 				width: 58%
 			.col2
@@ -313,105 +328,35 @@ $red: #d86780
 		.pay-f
 			.pay-link
 				margin-top: 7px
-
-		// &.pay__info_mod1
-		// 	.pay-text
-		// 		margin-bottom: 13px
-		// 	.pay-input
-		// 		margin-bottom: 7px
-		// 		display: block
-		// 		width: 100%
-		&.pay__info_mod
-			padding: 9px 15px 20px
-			.col1, .col2
-				width: 50%
-		&.pay__info_mod3
-			padding: 16px 28px 20px 20px
-			figure
-				margin-bottom: 25px
-			.pay-text
-				margin-bottom: 6px
-			.col1
-				width: 56%
-				margin-right: 2%
-			.col2
-				width: 42%
-		&.pay__info_mod4
-			padding: 11px 28px 20px 20px
-			figure
-				margin-bottom: 16px
-			.pay-text
+		.pay-paid
+			margin-bottom: 6px
+			&.pay-paid_marg
 				margin-bottom: 3px
-			.col1
-				width: 56%
-				margin-right: 2%
-			.col2
-				width: 42%
-		&.pay__info_mod5
-			padding: 11px 12px 20px
-			figure
-				margin-bottom: 36px
+		.pay-redirected
+			margin-top: 36px
 			.pay-meta
 				font-size: 14px
-		&.pay__info_mod7
-			padding: 21px 28px 20px 20px
-		&.pay__info_mod8
-			padding: 11px 24px 20px
-			figure
-				margin-bottom: 22px
-			// .pay-warn
-			// 	line-height: 24px
-		&.pay__info_mod9
-			padding: 16px 24px 20px
-			figure
-				margin-bottom: 20px
-			.pay__row
-				text-align: center
-			.pay-text
-				margin-bottom: 3px
+		.pay-get
+			text-align: center
+			margin-top: 6px
 			.pay-meta
 				text-transform: inherit
-		&.pay__info_mod10
-			padding: 9px 15px 20px 15px
-			figure
-				figcaption
-					line-height: 20px
-			.pay__row
-				text-align: center
-				.col1, 
-				.col2
-					width: 50%
-					.pay-text
-						text-align: left
-						margin-top: 20px
-			.pay-meta
-				text-transform: inherit
-				margin-top: 10px
-		&.pay__info_mod12
-			padding: 9px 15px 20px 15px
+		.pay__pa-ov
 			.col1
-				width: 56%
-				margin-right: 2%
+				width: 49%
 			.col2
-				width: 42%
-			.col1.is-mod, .col2.is-mod
-				width: 50%
-				margin: 0
-			.pay-text
-				line-height: 18px
-				margin-bottom: 15px
-		&.pay__info_mod13
-			padding: 25px 28px 20px 22px
+				width: 51%
+		.pay__wcont
 			.col1
 				width: 70%
 			.col2
 				width: 30%
-			.pay-text
-				margin-top: 37px
-			.pay-input
-				margin-top: 6px
-			.pay-link
-				margin-top: 4px
+		&.pay__info_warn
+			padding: 9px 15px 20px
+			margin-top: 90px
+		&.pay__info_succ
+			padding: 9px 18px 20px 22px
+			margin-top: 90px
 		[class^="col"], [class*="col"]
 			display: inline-block
 			vertical-align: top

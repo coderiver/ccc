@@ -37,7 +37,7 @@ link(rel="stylesheet" media="all" href="css/screen.css")
 		.pay__wallet(style={display: "none"})
 			a(href="#" class="pay-green") pay with external wallet
 			a(href="#" class="pay-gray") pay with Cubits wallet
-		.pay__info.pay__info_mod8
+		.pay__info.pay__info_warn
 			.pay__row
 				figure
 					p
@@ -45,9 +45,10 @@ link(rel="stylesheet" media="all" href="css/screen.css")
 					figcaption.pay-warn
 						| Order expired. please return to the website <br> and start again.
 			.pay__row
-				.pay-text 
-					|paid: 
-					span.is-green 0 bts
+				.pay-paid
+					.pay-text 
+						|paid: 
+						span.is-green 0 bts
 		.pay__footer
 			button(type="button" class="button-big button_green")
 				span 

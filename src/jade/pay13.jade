@@ -37,15 +37,17 @@ link(rel="stylesheet" media="all" href="css/screen.css")
 		.pay__wallet
 			a(href="#" class="pay-gray") pay with external wallet
 			a(href="#" class="pay-green") pay with Cubits wallet
-		.pay__info.pay__info_mod13
-			.col1
-				.pay-text
-					| Send exactly 0.00100000 BTC to
-				input(type="text" class="pay-input")
-				a.pay-link Copy address
-			.col2
-				.pay-qr
-					img(src="img/qr.jpg" alt="QR-код" title="QR-код")
+		.pay__info
+			.pay__wcont
+				.col1
+					.pay-text.is-mod
+						| Send exactly 0.00100000 BTC to
+					.pay-f
+						input(type="text" class="pay-input")
+						a.pay-link Copy address
+				.col2
+					.pay-qr
+						img(src="img/qr.jpg" alt="QR-код" title="QR-код")
 		.pay__footer
 			button(type="button" class="button-big button_green")
 				i.icon-b
