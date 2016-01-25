@@ -38,17 +38,19 @@ link(rel="stylesheet" media="all" href="css/screen.css")
 			a(href="#" class="pay-green") pay with external wallet
 			a(href="#" class="pay-gray") pay with Cubits wallet
 		.pay__info.pay__info_mod1
-			.col1
-				.pay-warn.
-					Opps, looks like you’ve <br>
-					payed only o.oo75694 BTC
-				.pay-text.
-					Send 0.00100000 BTC more to
-				input(type="text" class="pay-input")
-				a.pay-link Copy address
-			.col2
-				.pay-qr
-					img(src="img/qr.jpg" alt="QR-код" title="QR-код")
+			.pay-wrp
+				.col1
+					.pay-warn
+						| Opps, looks like you’ve <br>
+						| payed only o.oo75694 BTC
+					.pay-add_marg
+						.pay-text Send 0.00100000 BTC more to
+					.pay-f
+						input(type="text" class="pay-input")
+						a.pay-link Copy address
+				.col2
+					.pay-qr
+						img(src="img/qr.jpg" alt="QR-код" title="QR-код")
 		.pay__footer
 			button(type="button" class="button-big button_green")
 				i.icon-b
