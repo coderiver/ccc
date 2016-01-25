@@ -1783,13 +1783,15 @@ label.office { cursor: pointer; }
 .pay-text .is-green { color: #53c1c1; }
 .pay-text.is-red { color: #d86780; }
 
-.pay-warn { font-size: 14px; text-transform: uppercase; color: #d86780; text-transform: uppercase; font-family: "proximanova-bold", Arial, sans-serif; }
+.pay-warn, .pay-lg { font-size: 14px; text-transform: uppercase; color: #d86780; text-transform: uppercase; font-family: "proximanova-bold", Arial, sans-serif; }
 
-.pay-meta { font-family: "proximanova-bold", Arial, sans-serif; color: #a1a3ae; text-transform: uppercase; font-size: 16px; }
+.pay-lg { color: #63dede; }
+
+.pay-meta { font-family: "proximanova-bold", Arial, sans-serif; color: #a1a3ae; text-transform: uppercase; font-size: 16px; line-height: 18px; }
 
 .pay-input { width: 100%; max-width: 223px; height: 27px; line-height: 27px; background-color: #fff; border: 1px solid #b7b7b7; padding: 2px 10px; font-family: "proximanova-bold", Arial, sans-serif; font-size: 14px; color: #a1a3ae; }
 
-.pay-link { font-size: 16px; color: #0b5096; font-family: "proximanova-bold", Arial, sans-serif; position: relative; cursor: pointer; }
+.pay-link { font-size: 16px; color: #0b5096; font-family: "proximanova-bold", Arial, sans-serif; position: relative; cursor: pointer; text-decoration: none; }
 .pay-link:after { content: ""; display: block; bottom: 3px; left: 0; width: 100%; background-color: #a3bdd7; height: 1px; position: absolute; }
 .pay-link:hover:after { display: none; }
 
@@ -1828,6 +1830,14 @@ label.office { cursor: pointer; }
 .pay__info .pay__kwrap { text-align: center; }
 .pay__info .pay__wtext { text-align: center; }
 .pay__info .pay__wtext { text-align: center; max-width: 310px; margin: auto; }
+.pay__info .pay__log .col1 { width: 70%; }
+.pay__info .pay__log .col2 { width: 30%; text-align: right; }
+.pay__info .pay__balance { height: 27px; background-color: white; border: 1px solid #b7b7b7; padding: 3px 8px; margin-top: 20px; }
+.pay__info .pay__balance .pay-meta { font-size: 14px; }
+.pay__info .pay__balance .col2 { text-align: right; }
+.pay__info .pay__conclusion { margin-top: 10px; }
+.pay__info .pay__conclusion .col2 { text-align: right; }
+.pay__info .pay__conclusion .pay-meta { text-transform: inherit; }
 .pay__info.pay__info_mod1 .pay-warn { margin-bottom: 9px; }
 .pay__info.pay__info_mod1 .pay-text { margin-bottom: 13px; }
 .pay__info.pay__info_mod1 .pay-input { margin-bottom: 7px; display: block; width: 100%; }

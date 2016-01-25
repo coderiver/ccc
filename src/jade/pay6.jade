@@ -1,0 +1,70 @@
+meta(charset="utf-8")
+block title
+	title Payment
+block viewport
+	meta(name="viewport" content="width=device-width")
+meta(name="format-detection" content="telephone=no")
+link(rel="stylesheet" media="all" href="css/screen.css")
+<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+
+.out
+	.pay
+		.pay__header
+			.col.col1
+				button(type="button" class="button-med button_blue") << Cancel and return back
+			.col.col2
+				.pay-time
+					i.icon-clock 
+					span 09:34
+		.pay__logo
+			img(src="img/pay-logo.png" alt="logo" title="logo")
+		table.pay__t-table
+			tr
+				td.is-left
+					.pay-text Iphone 7S
+				td.is-right
+					.pay-text 10.00 
+						span.is-green EUR
+			tr
+				td.is-left
+					.pay-meta Usual unexisting device
+			tr
+				td.is-left
+					.pay-text Amount due
+				td.is-right
+					.pay-text 0.0345678 
+						span.is-green BTC
+		.pay__wallet
+			a(href="#" class="pay-gray") pay with external wallet
+			a(href="#" class="pay-green") pay with Cubits wallet
+		.pay__info
+			.pay__log
+				.col1
+					.pay-lg logged in as Maxym krupyshev
+				.col2
+					a(href="#" class="pay-link") Not you?
+			.pay__row
+				.pay__balance
+					.col1
+						.pay-meta
+							| Avaliable balance
+					.col2
+						.pay-meta
+							| 0.0005000 BTC
+			.pay__conclusion
+				.col1
+					.pay-meta 
+						| Oops, looks like your <br>
+						| balance is not enough. 
+				.col2
+					a(href="#" class="pay-link") Get more BTS
+		.pay__footer
+			button(type="button" class="button-big button_green")
+				span pay 0.00100000 BTC
+			button(type="button" class="button-big button_green button_wait" style={display: "none"})
+				i.icon-wait
+				span please wait...
+			.pay__copy
+				.pay-meta Powered by Cubits.com
+
+
