@@ -1838,6 +1838,12 @@ label.office { cursor: pointer; }
 .pay__info .pay__conclusion { margin-top: 10px; }
 .pay__info .pay__conclusion .col2 { text-align: right; }
 .pay__info .pay__conclusion .pay-meta { text-transform: inherit; }
+.pay__info .pay__overpaid { margin-top: 15px; }
+.pay__info .pay__form { margin-top: 10px; }
+.pay__info .pay__form .col1 { width: 58%; }
+.pay__info .pay__form .col2 { width: 42%; }
+.pay__info.pay__info_mod { padding: 9px 15px 20px; }
+.pay__info.pay__info_mod .col1, .pay__info.pay__info_mod .col2 { width: 50%; }
 .pay__info.pay__info_mod1 .pay-warn { margin-bottom: 9px; }
 .pay__info.pay__info_mod1 .pay-text { margin-bottom: 13px; }
 .pay__info.pay__info_mod1 .pay-input { margin-bottom: 7px; display: block; width: 100%; }

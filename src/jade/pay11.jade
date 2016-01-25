@@ -37,17 +37,19 @@ link(rel="stylesheet" media="all" href="css/screen.css")
 		.pay__wallet(style={display: "none"})
 			a(href="#" class="pay-green") pay with external wallet
 			a(href="#" class="pay-gray") pay with Cubits wallet
-		.pay__info.pay__info_mod4
+		.pay__info.pay__info_mod
 			.pay__row
 				figure
 					p
-						i.icon-warning
-					figcaption.pay-warn
-						| transaction failed. you’ve underpaid this invoice.
-			.pay__row
+						i.icon-succes
+					figcaption.pay-text
+						| paymant successfull! but looks like you’ve <br>
+						| paid o.oo1ooooo bts more then expected
+			.pay__overpaid
 				.pay-text 
-					|paid: 0.00751694 bts
-			.pay__row
+					|Overpaid: 
+					span.is-green 0.00751694 BTC
+			form(class="pay__form" method="GET" action)
 				.col1
 					input(type="text" class="pay-input" placeholder="Enter your BTC address here")
 				.col2
@@ -56,7 +58,6 @@ link(rel="stylesheet" media="all" href="css/screen.css")
 			button(type="button" class="button-big button_green")
 				span 
 					| return to the website
-
 			button(type="button" class="button-big button_green button_wait" style={display: "none"})
 				i.icon-wait
 				span please wait...

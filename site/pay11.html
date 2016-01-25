@@ -1,0 +1,77 @@
+
+<meta charset="utf-8"/>
+<title>Payment</title>
+<meta name="viewport" content="width=device-width"/>
+<meta name="format-detection" content="telephone=no"/>
+<link rel="stylesheet" media="all" href="css/screen.css"/><!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+<div class="out">
+  <div class="pay">
+    <div class="pay__header">
+      <div class="col col1">
+        <button type="button" style="visibility:hidden" class="button-med button_blue"><< Cancel and return back</button>
+      </div>
+      <div class="col col2">
+        <div class="pay-time"><i class="icon-warning-sm"> </i><span>00:00</span></div>
+      </div>
+    </div>
+    <div class="pay__logo"><img src="img/pay-logo.png" alt="logo" title="logo"/></div>
+    <table class="pay__t-table">
+      <tr>
+        <td class="is-left">
+          <div class="pay-text">Iphone 7S</div>
+        </td>
+        <td class="is-right">
+          <div class="pay-text">10.00 <span class="is-green">EUR</span></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="is-left">
+          <div class="pay-meta">Usual unexisting device</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="is-left">
+          <div class="pay-text">Amount due</div>
+        </td>
+        <td class="is-right">
+          <div class="pay-text">0.0345678 <span class="is-green">BTC</span></div>
+        </td>
+      </tr>
+    </table>
+    <div style="display:none" class="pay__wallet"><a href="#" class="pay-green">pay with external wallet</a><a href="#" class="pay-gray">pay with Cubits wallet</a></div>
+    <div class="pay__info pay__info_mod">
+      <div class="pay__row">
+        <figure>
+          <p><i class="icon-succes"></i></p>
+          <figcaption class="pay-text">
+            paymant successfull! but looks like you’ve <br>
+            paid o.oo1ooooo bts more then expected
+          </figcaption>
+        </figure>
+      </div>
+      <div class="pay__overpaid">
+        <div class="pay-text">
+           
+          Overpaid: <span class="is-green">0.00751694 BTC</span>
+        </div>
+      </div>
+      <form method="GET" action="action" class="pay__form">
+        <div class="col1">
+          <input type="text" placeholder="Enter your BTC address here" class="pay-input"/>
+        </div>
+        <div class="col2">
+          <button type="button" class="button-sm button_blue">request refund</button>
+        </div>
+      </form>
+    </div>
+    <div class="pay__footer">
+      <button type="button" class="button-big button_green"><span>
+           
+          return to the website</span></button>
+      <button type="button" style="display:none" class="button-big button_green button_wait"><i class="icon-wait"></i><span>please wait...</span></button>
+      <div class="pay__copy">
+        <div class="pay-meta">Powered by Cubits.com</div>
+      </div>
+    </div>
+  </div>
+</div>
