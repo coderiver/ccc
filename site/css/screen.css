@@ -1777,6 +1777,8 @@ label.office { cursor: pointer; }
 
 .icon-succes-sm { width: 14px; height: 10px; background-image: url("../img/icon-succes-sm.png"); display: inline-block; }
 
+.icon-key { width: 34px; height: 38px; background-image: url("../img/icon-key.png"); display: inline-block; }
+
 .pay-text { font-family: "proximanova-bold", Arial, sans-serif; font-size: 16px; text-transform: uppercase; color: #363558; letter-spacing: -0.03em; }
 .pay-text .is-green { color: #53c1c1; }
 
@@ -1821,6 +1823,7 @@ label.office { cursor: pointer; }
 .pay__info figure { text-align: center; }
 .pay__info figure p { padding-bottom: 10px; }
 .pay__info figure .pay-warn { font-size: 14px; line-height: 24px; }
+.pay__info .pay-kwrap { text-align: center; }
 .pay__info.pay__info_mod1 .pay-warn { margin-bottom: 9px; }
 .pay__info.pay__info_mod1 .pay-text { margin-bottom: 13px; }
 .pay__info.pay__info_mod1 .pay-input { margin-bottom: 7px; display: block; width: 100%; }
