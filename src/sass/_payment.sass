@@ -130,6 +130,7 @@ $gray: #d1d3de
 	font-size: 16px
 .pay-input
 	width: 100%
+	max-width: 223px
 	height: 27px
 	line-height: 27px
 	background-color: #fff
@@ -168,27 +169,13 @@ $gray: #d1d3de
 		margin-right: 8px
 	.icon-succes-sm
 		vertical-align: middle
-.pay-external, .pay-cubits
-	color: #f9fcfd
-	font-size: 12px
-	text-transform: uppercase
-	+bold
-	text-align: center
-	text-decoration: none
-	height: 34px
-	line-height: 36px
-	letter-spacing: 0.1em
-	cursor: pointer
-	&:hover
-		color: #f9fcfd
-		+tr(all 0.3s)
-.pay-external
+.pay-green
 	background-color: $green
 	&:hover
 		background-color: lighten($green, 4%)
 	&:active
 		background-color: darken($green, 5%)
-.pay-cubits
+.pay-gray
 	background-color: $gray
 	&:hover
 		background-color: lighten($gray, 4%)
@@ -238,6 +225,19 @@ $gray: #d1d3de
 			width: 50%
 			display: inline-block
 			vertical-align: top
+			color: #f9fcfd
+			font-size: 12px
+			text-transform: uppercase
+			+bold
+			text-align: center
+			text-decoration: none
+			height: 34px
+			line-height: 36px
+			letter-spacing: 0.1em
+			cursor: pointer
+			&:hover
+				color: #f9fcfd
+				+tr(all 0.3s)
 	&__info
 		min-height: 192px
 		background-color: white
@@ -336,7 +336,18 @@ $gray: #d1d3de
 			.pay-text
 				line-height: 18px
 				margin-bottom: 15px
-
+		&.pay__info_mod13
+			padding: 25px 28px 20px 22px
+			.col1
+				width: 70%
+			.col2
+				width: 30%
+			.pay-text
+				margin-top: 37px
+			.pay-input
+				margin-top: 6px
+			.pay-link
+				margin-top: 4px
 		[class^="col"], [class*="col"]
 			display: inline-block
 			vertical-align: top

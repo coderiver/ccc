@@ -8,10 +8,10 @@
   <div class="pay">
     <div class="pay__header">
       <div class="col col1">
-        <button type="button" style="visibility:hidden" class="button-med button_blue"><< Cancel and return back</button>
+        <button type="button" class="button-med button_blue"><< Cancel and return back</button>
       </div>
       <div class="col col2">
-        <div class="pay-time"><i class="icon-warning-sm"> </i><span>00:00</span></div>
+        <div class="pay-time"><i class="icon-clock"> </i><span>09:34</span></div>
       </div>
     </div>
     <div class="pay__logo"><img src="img/pay-logo.png" alt="logo" title="logo"/></div>
@@ -38,33 +38,18 @@
         </td>
       </tr>
     </table>
-    <div style="display:none" class="pay__wallet"><a href="#" class="pay-green">pay with external wallet</a><a href="#" class="pay-gray">pay with Cubits wallet</a></div>
-    <div class="pay__info pay__info_mod3">
-      <div class="pay__row">
-        <figure>
-          <p><i class="icon-warning"></i></p>
-          <figcaption class="pay-warn">Order expired. you’ve underpaid this invoice.</figcaption>
-        </figure>
+    <div class="pay__wallet"><a href="#" class="pay-gray">pay with external wallet</a><a href="#" class="pay-green">pay with Cubits wallet</a></div>
+    <div class="pay__info pay__info_mod13">
+      <div class="col1">
+        <div class="pay-text">Send exactly 0.00100000 BTC to</div>
+        <input type="text" class="pay-input"/><a class="pay-link">Copy address</a>
       </div>
-      <div class="pay__row">
-        <div class="pay-text">
-           
-          paid: <span class="is-green">0.00751694 bts</span>
-        </div>
-      </div>
-      <div class="pay__row">
-        <div class="col1">
-          <input type="text" placeholder="Enter your BTC address here" class="pay-input"/>
-        </div>
-        <div class="col2">
-          <button type="button" class="button-sm button_blue">request refund</button>
-        </div>
+      <div class="col2">
+        <div class="pay-qr"><img src="img/qr.jpg" alt="QR-код" title="QR-код"/></div>
       </div>
     </div>
     <div class="pay__footer">
-      <button type="button" class="button-big button_green"><span>
-           
-          return to the website</span></button>
+      <button type="button" class="button-big button_green"><i class="icon-b"></i><span>open my bitcoin wallet</span></button>
       <button type="button" style="display:none" class="button-big button_green button_wait"><i class="icon-wait"></i><span>please wait...</span></button>
       <div class="pay__copy">
         <div class="pay-meta">Powered by Cubits.com</div>
